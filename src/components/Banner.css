@@ -1,0 +1,7 @@
+.header__logo{
+  background-image: url(../assets/logo.png );
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 43%;
+  height: 3rem;
+}
