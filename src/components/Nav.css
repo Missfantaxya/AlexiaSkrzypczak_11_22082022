@@ -1,4 +1,4 @@
-.nav{
+.header__nav{
   width: 42%;
   height:1rem;
 }
@@ -12,10 +12,11 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .nav{
+  .header__nav{
   width: 25%;
   height:2.1rem;
 }
+/* TODO revoir écart entre les liens */
   .nav__list{
     font-size: 1.3rem;
     text-transform: capitalize;
