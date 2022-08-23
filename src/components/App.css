@@ -1,10 +1,13 @@
 .app{
-  margin: 0 1.3rem;
   font-family: 'Montserrat', sans-serif;
 }
 
+.main{
+  margin: 0 1.3rem;
+}
+
 @media screen and (min-width: 1440px) {
-  .app{
+  .main{
     margin: 0 6.3rem;
   }
 }
