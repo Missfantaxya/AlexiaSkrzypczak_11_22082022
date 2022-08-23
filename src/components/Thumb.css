@@ -1,0 +1,33 @@
+.thumb{
+  height: 15.9rem;
+  background-color: #FF6060;
+  border-radius: 10px;
+}
+
+.thumb__background{
+  height: 100%;
+  background: linear-gradient(180deg, 
+  rgba(255, 255, 255, 0) 0%,
+  rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.thumb__content{
+  color: #FFFFFF;
+  width:30%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-left: 1.2rem;
+  margin-bottom: 0.9rem;
+
+}
+
+@media screen and (min-width: 1440px) {
+  .thumb{
+    width: 21.2rem;
+    height: 21.2rem;
+  }
+}
