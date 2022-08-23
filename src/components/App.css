@@ -2,3 +2,9 @@
   margin: 0 1.3rem;
   font-family: 'Montserrat', sans-serif;
 }
+
+@media screen and (min-width: 1440px) {
+  .app{
+    margin: 0 6.3rem;
+  }
+}
