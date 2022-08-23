@@ -1,0 +1,12 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.3rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .header{
+    margin-top: 2.5rem;
+  }
+}
