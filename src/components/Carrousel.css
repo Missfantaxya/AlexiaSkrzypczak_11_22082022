@@ -1,0 +1,37 @@
+.carrousel{
+  height: 16rem;
+  margin-bottom: 0.9rem;
+  position: relative;
+}
+
+.carrousel__button{
+  background-image: url(../assets/arrow-mobile.svg);
+  width:24px;
+  height:24px;
+  position: absolute;
+  top:45%;
+  overflow: hidden;
+  color: transparent;
+}
+
+.carrousel__previous{
+  left:0;
+}
+
+.carrousel__next{
+  right:0;
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 1440px) {
+  .carrousel{
+    height: 26rem;
+    margin-bottom: 1.8rem;
+  }
+  .carrousel__button{
+    background-image: url(../assets/arrow-desktop.svg);
+    top:35%;
+    width:96px;
+    height: 120px;
+  }
+}

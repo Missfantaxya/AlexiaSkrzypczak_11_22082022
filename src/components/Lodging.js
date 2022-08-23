@@ -1,10 +1,12 @@
 import "./Lodging.css"
 
+import Carrousel from "./Carrousel"
+
 function Lodging()
 {
   return (
     <>
-      <p>composant 1</p>
+      <Carrousel />
       <p>composant 2</p>
     </>
   )
