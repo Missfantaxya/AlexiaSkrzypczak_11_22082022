@@ -1,6 +1,7 @@
 import "./Lodging.css"
 
 import Carrousel from "./Carrousel"
+import Tag from "./Tag"
 
 function Lodging()
 {
@@ -13,7 +14,7 @@ function Lodging()
             <p className="lodging__location">Paris, Île-de-France</p>
         </div>
         <div className="lodging__details">
-          <div> Les tags FAIRE COMPOSANT</div>
+          <Tag />
           <div> Notation FAIRE COMPOSANT </div>
         </div>
         <div className="lodging__host">
