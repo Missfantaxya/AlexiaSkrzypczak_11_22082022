@@ -4,7 +4,7 @@ import coverMobile from '../assets/statique-carrousel-mobile.png'
 import coverDesktop from '../assets/statique-carrousel-desktop.png'
 
 
-// FIX attention au retaillage image du json dionc ternair non pertinente
+// FIX attention au retaillage image du json donc ternair non pertinente
 // passer par le css
 
 function Carrousel ()

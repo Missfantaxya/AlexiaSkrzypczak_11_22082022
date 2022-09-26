@@ -3,6 +3,7 @@ import "./Lodging.css"
 import Carrousel from "./Carrousel"
 import Tag from "./Tag"
 import Host from "./Host"
+import Rate from "./Rate"
 
 function Lodging()
 {
@@ -18,7 +19,7 @@ function Lodging()
         <div className="lodging__details">
           <Host />
           <div>
-            Notation FAIRE COMPOSANT 
+            <Rate />
           </div>
         </div>
       </div>
