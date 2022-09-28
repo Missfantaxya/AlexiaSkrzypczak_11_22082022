@@ -4,7 +4,7 @@ import './Tag.css'
 function Tag() {
   return (
     <div className='tag'>
-      tag-name
+      Cozy
     </div>
   )
 }

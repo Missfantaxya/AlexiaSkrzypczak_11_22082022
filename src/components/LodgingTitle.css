@@ -1,0 +1,16 @@
+.lodging__title{
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.lodging__description{
+  height:2.875rem; 
+  line-height: 142.6%;
+  margin-bottom: 0.3125rem;;
+}
+
+.lodging__location{
+  height: 1.375rem;
+  font-size: 0.875rem; 
+  line-height: 142.6%;
+}
