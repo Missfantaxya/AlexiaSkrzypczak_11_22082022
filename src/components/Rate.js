@@ -16,7 +16,7 @@ function Rate() {
         { Star( 15, "#FF6060" ) }
         { Star( 15, "#E3E3E3" ) }
         { Star( 15, "#E3E3E3" ) }
-        </div>
+      </div>
     )
 }
 
