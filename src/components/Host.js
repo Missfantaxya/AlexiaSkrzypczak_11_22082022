@@ -1,15 +1,13 @@
-
-import user from "../assets/user.png"
+import "./Host.css"
 
 function Host() {
   return (
-    <div className="lodging__host">
-      <div className="host__name">
+    <div className="host">
+      <div className="host__identity">
         <p>Alexandre</p>
         <p>Dumas</p>
       </div>
       <div className="host__picture">
-        <img className="host__user" src={user} alt="utilisateur" />
       </div>
     </div>
   )

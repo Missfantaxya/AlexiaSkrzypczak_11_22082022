@@ -2,8 +2,7 @@ import "./Lodging.css"
 
 import Carrousel from "./Carrousel"
 import Tag from "./Tag"
-import Host from "./Host"
-import Rate from "./Rate"
+import HostDetails from "./HostDetails"
 
 function Lodging()
 {
@@ -16,12 +15,7 @@ function Lodging()
           <p className="lodging__location">Paris, Île-de-France</p>
           <Tag />
         </div>
-        <div className="lodging__details">
-          <Host />
-          <div>
-            <Rate />
-          </div>
-        </div>
+        <HostDetails />
       </div>
     </>
   )

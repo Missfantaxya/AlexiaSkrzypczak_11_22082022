@@ -10,12 +10,12 @@ const Star = (size, color) => (
 
 function Rate() {
     return(
-      <div>
-        { Star( 16, "#FF6060" ) }
-        { Star( 16, "#FF6060" ) }
-        { Star( 16, "#FF6060" ) }
-        { Star( 16, "#E3E3E3" ) }
-        { Star( 16, "#E3E3E3" ) }
+      <div className='host__rate'>
+        { Star( 15, "#FF6060" ) }
+        { Star( 15, "#FF6060" ) }
+        { Star( 15, "#FF6060" ) }
+        { Star( 15, "#E3E3E3" ) }
+        { Star( 15, "#E3E3E3" ) }
         </div>
     )
 }

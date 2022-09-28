@@ -1,0 +1,6 @@
+.host__details{
+  display : flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: space-between;
+  
+}
