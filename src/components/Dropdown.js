@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import './Dropdown.css'
 
 const Arrow = ( sizeW, sizeH, color) => (
@@ -6,8 +8,13 @@ const Arrow = ( sizeW, sizeH, color) => (
   </svg>
 )
 
+// FIXME le onclick ouvre et ferme les 2 dropdowns en même temps
 function Dropdown ()
 {
+  const [ open, setOpen ] = useState( false )
+
+  const dropdownnContentClassname =!open? 'dropdownn__content--close' : 'dropdownn__content--open'
+
   const menus = [
     'Description',
     'Equipement'
@@ -31,12 +38,16 @@ function Dropdown ()
         <div key={ menu } className='lodging__dropdown'>
           <button
             className='dropdown__title'
-            type='button' >
+            type='button'
+          onClick={ ()=>setOpen(!open) }
+          >
             <span>{ menu }</span>
-            <span className='dropdown__arrow'>{ Arrow( 15.2, 8.96, "#ffffff" ) }</span>
+            <span className='dropdown__arrow--close'>
+              { Arrow( 15.2, 8.96, "#ffffff" ) }
+            </span>
           </button> 
           <div>
-            <div className='dropdownn__content'>
+            <div className={dropdownnContentClassname}>
               { menu === 'Description'
                 ? <p>{ description }</p>
                 : <ul>

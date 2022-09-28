@@ -14,15 +14,26 @@
   justify-content: space-between;
 }
 
-.dropdown__arrow{
+.dropdown__arrow--close{
   transform: rotate(180deg);
 }
 
-.dropdownn__content{
+.dropdown__arrow--open{
+  transform: rotate(0deg);
+}
+
+.dropdownn__content--close{
+  display: none;
   position: relative;
   border-radius: 5px;
   top:-5px;
   z-index: -1;
   background-color: #F7F7F7;
   padding: 1.43875rem 0.431875rem 0.8125rem 0.719375rem;
+  font-size: 0.75rem;
+  line-height: 142.6%;
+}
+
+.dropdownn__content--open{
+  display: block;
 }
