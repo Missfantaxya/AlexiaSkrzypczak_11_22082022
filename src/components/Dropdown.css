@@ -1,0 +1,28 @@
+.lodging__dropdown{
+  position: relative;
+  margin-top: 1.03125rem;
+  margin-bottom: 1.254375rem;
+}
+
+.dropdown__title{
+  background-color: #FF6060;
+  color:#FFFFFF;
+  width:100%;
+  border-radius: 5px;
+  padding: 0.64rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown__arrow{
+  transform: rotate(180deg);
+}
+
+.dropdownn__content{
+  position: relative;
+  border-radius: 5px;
+  top:-5px;
+  z-index: -1;
+  background-color: #F7F7F7;
+  padding: 1.43875rem 0.431875rem 0.8125rem 0.719375rem;
+}

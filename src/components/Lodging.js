@@ -1,4 +1,5 @@
 import "./Lodging.css"
+import Dropdown from "./Dropdown"
 
 import Carrousel from "./Carrousel"
 import LodgingTitle from "./LodgingTitle"
@@ -13,6 +14,7 @@ function Lodging()
         <LodgingTitle/>
         <HostDetails />
       </div>
+      <Dropdown />
     </>
   )
 }
