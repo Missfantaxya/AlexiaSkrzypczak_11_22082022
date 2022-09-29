@@ -8,59 +8,35 @@ const Arrow = ( sizeW, sizeH, color) => (
   </svg>
 )
 
-// FIXME le onclick ouvre et ferme les 2 dropdowns en même temps
-function Dropdown ()
+
+function Dropdown (description)
 {
   const [ open, setOpen ] = useState( false )
 
   const dropdownnContentClassname =!open? 'dropdownn__content--close' : 'dropdownn__content--open'
-
-  const menus = [
-    'Description',
-    'Equipement'
-  ]
   
-  const description = "Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied). "
-
-  const equipments = [
-    "Climatisation",
-    "Wi-Fi",
-    "Cuisine",
-    "Espace de travail",
-    "Fer à repasser",
-    "Sèche-cheveux",
-    "Cintres"
-  ]
 
   return (
     <div>
-      { menus.map( ( menu ) =>
-        <div key={ menu } className='lodging__dropdown'>
-          <button
-            className='dropdown__title'
-            type='button'
-          onClick={ ()=>setOpen(!open) }
+      <div key={ description.menu } className='lodging__dropdown'>
+        <button
+          className='dropdown__title'
+          type='button'
+          onClick={ () => setOpen( !open ) }
+        >
+          <span>{ description.menu }</span>
+          <span className='dropdown__arrow--close'>
+            { Arrow( 15.2, 8.96, "#ffffff" ) }
+          </span>
+        </button> 
+        <div>
+          <div
+            className={ dropdownnContentClassname }
           >
-            <span>{ menu }</span>
-            <span className='dropdown__arrow--close'>
-              { Arrow( 15.2, 8.96, "#ffffff" ) }
-            </span>
-          </button> 
-          <div>
-            <div className={dropdownnContentClassname}>
-              { menu === 'Description'
-                ? <p>{ description }</p>
-                : <ul>
-                  { equipments.map( ( equipment ) =>
-                    <li key={ equipment }>
-                      { equipment }
-                    </li> ) }
-                </ul> }
-            </div>
+            {description.children}
           </div>
         </div>
-      ) }
-      
+      </div>
     </div>
   )
 }
