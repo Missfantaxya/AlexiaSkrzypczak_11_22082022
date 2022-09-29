@@ -13,8 +13,8 @@ function Dropdown (description)
 {
   const [ open, setOpen ] = useState( false )
 
-  const dropdownnContentClassname =!open? 'dropdownn__content--close' : 'dropdownn__content--open'
-  
+  const dropdownnContentClassName =!open? 'dropdownn__content--close' : 'dropdownn__content--open'
+  const arrowDirectionClassName = !open ? 'dropdown__arrow--close' : 'dropdown__arrow--open'
 
   return (
     <div>
@@ -25,13 +25,13 @@ function Dropdown (description)
           onClick={ () => setOpen( !open ) }
         >
           <span>{ description.menu }</span>
-          <span className='dropdown__arrow--close'>
+          <span className={arrowDirectionClassName}>
             { Arrow( 15.2, 8.96, "#ffffff" ) }
           </span>
         </button> 
         <div>
           <div
-            className={ dropdownnContentClassname }
+            className={ dropdownnContentClassName }
           >
             {description.children}
           </div>
