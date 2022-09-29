@@ -4,7 +4,7 @@ justify-content: space-between;
 align-items: center;
 width: 40.6%;
 height: 2.0625rem;
-;
+
 }
 .host__identity{
   display :flex;
@@ -21,4 +21,21 @@ width: 2rem;
 height: 2rem;
 border-radius: 50%;
 background-color: #C4C4C4;
+}
+
+@media screen and (min-width: 1440px) {
+  .host{
+  width: 13.468%;
+  height: 4rem;
+  }
+  .host__identity{
+    height: 3.25rem;
+    width: 5.8125rem;
+    font-size: 1.125rem;
+  }
+
+  .host__picture{
+  width: 4rem;
+  height: 4rem;
+  }
 }

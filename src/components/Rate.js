@@ -1,6 +1,6 @@
 import './Rate.css'
 
-
+// TODO modifier la taille du svg selon la taille de l'écran
 const Star = (size, color) => (
   <div className='host__star'>
     <svg width={ size } height={ size } fill={ color } xmlns="http://www.w3.org/2000/svg">
