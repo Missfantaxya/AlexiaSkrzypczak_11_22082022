@@ -1,15 +1,13 @@
 .header{
-  margin: 0 1.25rem;
+  margin: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1.3rem;
   margin-bottom:1rem;
 }
 
 @media screen and (min-width: 1440px) {
   .header{
     margin: 2.5rem 6.3rem 3.9rem 6.3rem ;
-
   }
 }

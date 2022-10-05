@@ -5,8 +5,6 @@ import "./Nav.css"
 function Nav ()
 {
   let activeStyle = { textDecoration: "underline" };
-  // TODO vérifier si on peut garder activeStyle aussi pour la page /about plutôt que de passerpar la className
-  // let activeClassName = "underline";
 
   return (
     <nav className="header__nav">
@@ -22,14 +20,14 @@ function Nav ()
           </NavLink>
         </li>
         <li>
-          {/* <NavLink
+          <NavLink
             to="about"
-            className={({ isActive }) =>
-              isActive ? activeClassName : undefined
+            style={({ isActive }) =>
+              isActive ? activeStyle : undefined
             }
-          > */}
+          >
             A propos
-          {/* </NavLink> */}
+          </NavLink>
         </li>
       </ul>
     </nav>

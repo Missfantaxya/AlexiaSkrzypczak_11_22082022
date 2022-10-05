@@ -1,10 +1,11 @@
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import './App.css'
 
 import Header from './Header'
 import Home from './Home'
 import Lodging from './Lodging'
+import About from './About'
 import Footer from './Footer'
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
         <main className='main'>
           <Routes>
             <Route path="/" element={ <Home /> } />
-            <Route path="lodging" element={<Lodging />} />
+          <Route path="lodging" element={ <Lodging /> } />
+          <Route path="about" element={<About />} />
           </Routes>
         </main>
       <Footer />
@@ -22,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
