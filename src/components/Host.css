@@ -25,13 +25,15 @@ background-color: #C4C4C4;
 
 @media screen and (min-width: 1440px) {
   .host{
-  width: 13.468%;
-  height: 4rem;
+    /* width: 13.468%; */
+    width: 167px;
+    height: 4rem;
   }
   .host__identity{
     height: 3.25rem;
     width: 5.8125rem;
     font-size: 1.125rem;
+    margin-right: 0.625rem;
   }
 
   .host__picture{

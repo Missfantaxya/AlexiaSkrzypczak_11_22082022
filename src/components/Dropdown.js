@@ -17,26 +17,21 @@ function Dropdown (description)
   const arrowDirectionClassName = !open ? 'dropdown__arrow--close' : 'dropdown__arrow--open'
 
   return (
-    <div>
-      <div key={ description.menu } className='lodging__dropdown'>
-        <button
-          className='dropdown__title'
-          type='button'
-          onClick={ () => setOpen( !open ) }
-        >
-          <span>{ description.menu }</span>
-          <span className={arrowDirectionClassName}>
-            { Arrow( 15.2, 8.96, "#ffffff" ) }
-          </span>
-        </button> 
-        <div>
-          <div
-            className={ dropdownnContentClassName }
-          >
-            {description.children}
-          </div>
+    <div key={ description.menu } className='lodging__dropdown'>
+      <button
+        className='dropdown__title'
+        type='button'
+        onClick={ () => setOpen( !open ) }
+      >
+        <span>{ description.menu }</span>
+        <span className={arrowDirectionClassName}>
+          { Arrow( 15.2, 8.96, "#ffffff" ) }
+        </span>
+      </button> 
+        <div
+          className={ dropdownnContentClassName } >
+          {description.children}
         </div>
-      </div>
     </div>
   )
 }

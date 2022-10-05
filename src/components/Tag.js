@@ -3,7 +3,6 @@ import './Tag.css'
 // TODO faire le map pour afficher tous les tags.
 
 
-
 function Tag()
 {
   const tags = [

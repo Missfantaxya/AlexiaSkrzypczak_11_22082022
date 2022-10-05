@@ -28,27 +28,29 @@ function Lodging ()
   return (
     <>
       <Carrousel />
-      <div className="lodging">
+      <div className="lodging__details">
         <LodgingTitle/>
         <HostDetails />
       </div>
-      { menus.map( ( menu ) =>
-          <Dropdown
-            menu={ menu }
-            description={ description }
-            equipments={ equipments }
-            key={menu}
-          >
-            { menu === 'Description'
-              ? <p >{ description }</p>
-              : <ul>
-                { equipments.map( ( equipment ) =>
-                  <li key={ equipment }>
-                    { equipment }
-                  </li> ) }
-                </ul> }
-          </Dropdown>
-        )}
+      <div className="lodging__dropdowns">
+        { menus.map( ( menu ) =>
+            <Dropdown
+              menu={ menu }
+              description={ description }
+              equipments={ equipments }
+              key={menu}
+            >
+              { menu === 'Description'
+                ? <p>{ description }</p>
+                : <ul>
+                  { equipments.map( ( equipment ) =>
+                    <li key={ equipment }>
+                      { equipment }
+                    </li> ) }
+                  </ul> }
+            </Dropdown>
+          )}
+      </div>
     </>
   )
 }

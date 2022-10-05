@@ -1,1 +1,21 @@
 
+/* FIXME pb de heig avec open */
+.lodging__dropdowns{
+  font-size: 0.8125rem;
+  margin-bottom: 0.875rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .lodging__details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+
+  .lodging__dropdowns{
+    --lodging-dropdowns: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.125rem;
+  }
+}

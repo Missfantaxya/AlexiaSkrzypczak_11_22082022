@@ -15,7 +15,8 @@
 
 @media screen and (min-width: 1440px) {
   .host__rate{
-    width: 16.7742%;
+    /* width: 16.7742%; */
+    width: 208px;
   }
 
   .host__star{
