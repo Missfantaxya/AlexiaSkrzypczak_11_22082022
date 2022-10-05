@@ -1,0 +1,29 @@
+.host__rate{
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.host__star{
+  height: 0.9375rem;
+  width: 0.9375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .host__rate{
+    /* width: 16.7742%; */
+    width: 208px;
+  }
+
+  .host__star{
+    height: 1.875rem;
+    width: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

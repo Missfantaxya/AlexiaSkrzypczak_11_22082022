@@ -1,0 +1,12 @@
+.host__details{
+  display : flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1440px) {
+  .host__details{
+    flex-flow: column nowrap;
+    align-items: flex-end;
+  }
+}
