@@ -1,7 +1,3 @@
-/* FIXME descendre le footer en allongeant about */
-.about {
-  min-height:fit-content;
-}
 .about__mask{
   width: 100%;
   height: 13.9375rem;
@@ -16,4 +12,12 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 1440px) {
+  .about__mask{
+    border-radius: 25px;
+    background-color: #F7F7F7;
+    background-image: url(../assets/about-mask-desktop.png);
+  }
 }

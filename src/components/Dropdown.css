@@ -42,10 +42,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .dropdown{ 
-    
-  }
-
   .dropdown__lodging {
     --button-height :3.25rem;
     width: 36.375rem;
@@ -63,7 +59,8 @@
     height: var(--button-height);
   }
 
-  .dropdownn__content--open{
+  /* FIXME ne le prend pas en compte */
+  .dropdown__lodging > .dropdown__button > .dropdownn__content--open{
     font-size: 1.125rem;
     height: calc(100% - var(--button-height));
   }
