@@ -13,7 +13,7 @@ function Nav ()
       <ul className="nav__list">
         <li>
           <NavLink
-            to="home"
+            to="/"
             style={({ isActive }) =>
               isActive ? activeStyle : undefined
             }
