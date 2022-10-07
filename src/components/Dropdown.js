@@ -9,28 +9,30 @@ const Arrow = ( sizeW, sizeH, color) => (
 )
 
 
-function Dropdown (description)
+function Dropdown ({classStyle, menu, children})
 {
   const [ open, setOpen ] = useState( false )
+
+  const style = `dropdown ${classStyle}`
 
   const dropdownnContentClassName =!open? 'dropdownn__content--close' : 'dropdownn__content--open'
   const arrowDirectionClassName = !open ? 'dropdown__arrow--close' : 'dropdown__arrow--open'
 
   return (
-    <div key={ description.menu } className='lodging__dropdown'>
+    <div key={ menu } className={style}>
       <button
-        className='dropdown__title'
+        className='dropdown__button'
         type='button'
         onClick={ () => setOpen( !open ) }
       >
-        <span>{ description.menu }</span>
+        <span>{ menu }</span>
         <span className={arrowDirectionClassName}>
           { Arrow( 15.2, 8.96, "#ffffff" ) }
         </span>
-      </button> 
-        <div
-          className={ dropdownnContentClassName } >
-          {description.children}
+      </button>
+      <div
+        className={ dropdownnContentClassName }>
+          {children}
         </div>
     </div>
   )

@@ -1,5 +1,5 @@
 
-/* FIXME pb de heig avec open */
+
 .lodging__dropdowns{
   font-size: 0.8125rem;
   margin-bottom: 0.875rem;
@@ -17,5 +17,10 @@
     display: flex;
     justify-content: space-between;
     font-size: 1.125rem;
+  }
+
+  .dropdown__lodging .dropdownn__content--open {
+    font-size: 1.125rem;
+    height: calc(100% - var(--button-height));
   }
 }
