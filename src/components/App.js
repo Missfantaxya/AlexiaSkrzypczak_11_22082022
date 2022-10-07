@@ -6,6 +6,7 @@ import Header from './Header'
 import Home from './Home'
 import Lodging from './Lodging'
 import About from './About'
+import NotFound from './NotFound'
 import Footer from './Footer'
 
 function App() {
@@ -15,8 +16,9 @@ function App() {
         <main className='main'>
           <Routes>
             <Route path="/" element={ <Home /> } />
-          <Route path="lodging" element={ <Lodging /> } />
-          <Route path="about" element={<About />} />
+            <Route path="lodging" element={ <Lodging /> } />
+          <Route path="about" element={ <About /> } />
+          <Route path="*" element={ <NotFound />} />
           </Routes>
         </main>
       <Footer />
