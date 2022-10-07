@@ -2,9 +2,13 @@ import { Link } from "react-router-dom"
 
 import "./Thumb.css"
 
-// TODO rendre le lien dynamique
+// TODO rendre le lien dynamique (https://reactrouter.com/en/main/route/route#dynamic-segments)
 
-function Thumb ()
+function Thumb ( {
+  id,
+  title,
+  cover,
+} )
 {
   return (
     <article className="thumb">

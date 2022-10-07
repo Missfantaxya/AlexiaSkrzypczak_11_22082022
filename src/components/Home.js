@@ -1,5 +1,5 @@
 import "./Home.css"
-
+import advertisements from "../data/advertisements"
 import Mask from "./Mask.js"
 import Thumb from "./Thumb"
 
@@ -9,7 +9,12 @@ function Home ()
     <>
       <Mask />
       <section className="thumbs">
-        <Thumb />
+        {advertisements.map((advertisement) =>(
+          <Thumb
+            key={ advertisement.id }
+            {...advertisement}
+          />
+        ))}
       </section>
     </>
  )

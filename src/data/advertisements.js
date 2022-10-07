@@ -1,4 +1,5 @@
-[
+
+const advertisements=[
   {
     "id": "c67ab8a7",
     "title": "Appartement cosy",
@@ -519,3 +520,5 @@
     "tags": ["Louvre", "Marais", "Rivoli"]
   }
 ]
+
+export default advertisements
