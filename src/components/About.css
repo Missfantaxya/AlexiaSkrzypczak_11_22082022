@@ -20,4 +20,8 @@
     background-color: #F7F7F7;
     background-image: url(../assets/about-mask-desktop.png);
   }
+
+  .dropdown__about>.dropdownn__content--open {
+    font-size: 1.5rem;
+  }
 }
