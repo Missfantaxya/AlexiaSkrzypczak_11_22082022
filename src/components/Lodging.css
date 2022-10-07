@@ -19,7 +19,7 @@
     font-size: 1.125rem;
   }
 
-  .dropdown__lodging>.dropdownn__content--open {
+  .dropdown__lodging .dropdownn__content--open {
     font-size: 1.125rem;
     height: calc(100% - var(--button-height));
   }

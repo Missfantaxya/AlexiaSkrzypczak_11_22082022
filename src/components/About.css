@@ -21,7 +21,11 @@
     background-image: url(../assets/about-mask-desktop.png);
   }
 
-  .dropdown__about>.dropdownn__content--open {
+  .about__dropdowns {
+    font-size: 1.5rem;
+  }
+
+  .dropdown__about .dropdownn__content--open {
     font-size: 1.5rem;
   }
 }
