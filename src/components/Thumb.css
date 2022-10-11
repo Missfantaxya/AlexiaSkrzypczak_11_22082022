@@ -1,3 +1,4 @@
+/* FIXME décalage entre fond rouge et image de la cover */
 .thumb{
   height: 15.9rem;
   background-color: #FF6060;
@@ -7,9 +8,9 @@
 
 .thumb__background{
   height: 100%;
-  /* background: linear-gradient(180deg, 
+  background: linear-gradient(180deg, 
   rgba(255, 255, 255, 0) 0%,
-  rgba(0, 0, 0, 0.5) 100%); */
+  rgba(0, 0, 0, 0.5) 100%);
   border-radius: 10px;
   overflow:hidden;
   position: relative;
