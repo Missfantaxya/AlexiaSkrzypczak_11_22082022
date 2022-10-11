@@ -1,6 +1,8 @@
 import "./Lodging.css"
-import Dropdown from "./Dropdown"
 
+import advertisements from "../data/advertisements"
+
+import Dropdown from "./Dropdown"
 import Carrousel from "./Carrousel"
 import LodgingTitle from "./LodgingTitle"
 import HostDetails from "./HostDetails"
@@ -24,7 +26,9 @@ function Lodging ()
         "Cintres"
       ]
     }
-
+  
+  console.log( "test data.id: :", advertisements.id )//!
+  
   return (
     <>
       <Carrousel />

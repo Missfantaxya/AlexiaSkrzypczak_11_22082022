@@ -10,7 +10,9 @@ function LodgingDetails ({
   cover,
 } )
 {
-  
+  // console.log( "id :", id )//!
+  // console.log( "title :", title )//!
+  // console.log("cover :", cover)//!
     return(
       <div className="lodging__title">
         <h2 className="lodging__content">Test id : {id}</h2>
