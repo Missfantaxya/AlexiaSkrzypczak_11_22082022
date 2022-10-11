@@ -9,10 +9,11 @@ function Thumb ( {
   title,
   cover,
 } )
-  {
+{
+  console.log("id : ", id)
 return (
-    <article className="thumb" id={id}>
-      <Link to="/lodging/:id"  >
+  <article className="thumb" id={ id }>
+      <Link to={`/lodging/:${id}`}  >
         <div className="thumb__background" >
           <img
             className="thumb__cover"

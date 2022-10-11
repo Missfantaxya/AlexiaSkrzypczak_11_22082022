@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useParams } from 'react-router-dom';
 
 import './App.css'
 
@@ -11,7 +11,9 @@ import About from './About'
 import NotFound from './NotFound'
 import Footer from './Footer'
 
-function App() {
+function App ()
+{
+  let {id} = useParams()
   return (
     <div className="app">
       <Header />
@@ -19,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={ <Home /> } />
           {/* <Route path="lodging" element={ <Lodging /> } /> */}
-          <Route path="lodging/:id" element={ <Lodging /> } />
+          <Route path={`lodging/:${id}`} element={ <Lodging /> } />
           <Route path="about" element={ <About /> } />
           <Route path="*" element={ <NotFound />} />
           </Routes>

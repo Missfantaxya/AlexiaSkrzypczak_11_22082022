@@ -1,12 +1,16 @@
-import { useParams } from 'react-router-dom'
+
 
 import './LodgingTitle.css'
 
 import Tag from './Tag'
 
-function LodgingDetails ()
+function LodgingDetails ({
+  id,
+  title,
+  cover,
+} )
 {
-  const { id } = useParams();
+  
     return(
       <div className="lodging__title">
         <h2 className="lodging__content">Test id : {id}</h2>
