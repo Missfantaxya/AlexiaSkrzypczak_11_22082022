@@ -11,8 +11,8 @@ function Thumb ( {
 } )
   {
 return (
-    <article className="thumb">
-      <Link to="/lodging"  >
+    <article className="thumb" id={id}>
+      <Link to="/lodging/:id"  >
         <div className="thumb__background" >
           <img
             className="thumb__cover"
