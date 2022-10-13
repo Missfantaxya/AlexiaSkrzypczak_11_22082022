@@ -3,17 +3,10 @@ import './Tag.css'
 // TODO faire le map pour afficher tous les tags.
 
 
-function Tag()
-{
-  const tags = [
-  'Cozy',
-  'Canal',
-  'Paris 10'
-  ]
-
+function Tag({currentTags}) {
   return (
     <ul className='tags__list'>
-      {tags.map((tag)=>
+      {currentTags.map((tag)=>
         <li key={tag} className='tag'>
         {tag}
       </li>)}

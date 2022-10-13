@@ -1,3 +1,5 @@
+import { useParams } from "react-router-dom"
+
 import "./Lodging.css"
 
 import advertisements from "../data/advertisements"
@@ -26,14 +28,31 @@ function Lodging ()
         "Cintres"
       ]
     }
+
+  // récupération de la valeur dynamique de l'url dans un ocject
+  const objUrlId  = useParams()
   
-  console.log( "test data.id: :", advertisements.id )//!
+  // récupération de la valeur dynamique de l'url dans un tableau
+  const arrHousingId = Object.values( objUrlId )
+
+  // purification de la valuer de l'id 
+  const houseId = arrHousingId[0].replace(":", '')
+
+  function findById ( housing )
+  {
+    return housing.id === houseId
+  }
+
+  const HousingById = advertisements.filter( findById )
+
+  const currentLodging = HousingById[0]
+  // console.log( "currentLodging :", currentLodging ) //*
   
   return (
     <>
       <Carrousel />
       <div className="lodging__details">
-        <LodgingTitle/>
+        <LodgingTitle currentLodging={ currentLodging } />
         <HostDetails />
       </div>
       <div className="lodging__dropdowns">
