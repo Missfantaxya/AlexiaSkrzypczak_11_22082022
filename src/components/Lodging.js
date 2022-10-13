@@ -29,15 +29,20 @@ function Lodging ()
       ]
     }
 
-  // récupération de la valeur dynamique de l'url dans un ocject
+  // valeur dynamique de l'url dans un ocject
   const objUrlId  = useParams()
   
-  // récupération de la valeur dynamique de l'url dans un tableau
+  // valeur dynamique de l'url dans un tableau
   const arrHousingId = Object.values( objUrlId )
 
-  // purification de la valuer de l'id 
+  // purification de l'id 
   const houseId = arrHousingId[0].replace(":", '')
 
+  /**
+   * récupération de l'object de l'hébergement actif sur la page
+   * @param {*} housing 
+   * @returns boolean
+   */
   function findById ( housing )
   {
     return housing.id === houseId
@@ -46,7 +51,6 @@ function Lodging ()
   const HousingById = advertisements.filter( findById )
 
   const currentLodging = HousingById[0]
-  // console.log( "currentLodging :", currentLodging ) //*
   
   return (
     <>

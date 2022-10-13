@@ -1,8 +1,5 @@
 import './Tag.css'
 
-// TODO faire le map pour afficher tous les tags.
-
-
 function Tag({currentTags}) {
   return (
     <ul className='tags__list'>
