@@ -17,19 +17,33 @@ const Star = (color) => (
     </svg>
   </div>
   )
+  
+  let fullStar = Star( "#FF6060" )
+  let emptyStar = Star( "#E3E3E3" )
+  
+  const currentHostRate = parseInt( currentRate.currentRate , 10 ) 
 
-  // console.log( "currentRate : ", currentRate ) //* string
-  const hostRate = parseInt( currentRate.currentRate , 10 ) 
-  console.log( "hostRate : ", hostRate ) //*
+  let stars = []
 
-    return (
-      <div className='host__rate'>
-        { Star( "#FF6060" ) }
-        { Star( "#FF6060" ) }
-        { Star("#FF6060" ) }
-        { Star( "#E3E3E3" ) }
-        { Star( "#E3E3E3" ) }
-      </div>
+  for (let i = 0; i < currentHostRate; i++) {
+    stars.push( fullStar )
+  }
+  if ( currentHostRate < 5 )
+  {
+    for (let i = currentHostRate+1; i < 6; i++) {
+      stars.push( emptyStar )
+    }
+  }
+
+  return (
+    <div className='host__rate'>
+      {
+        stars.map( ( star ) =>
+          <div className='star__wrapper' key={ star.id }>
+              { star }
+          </div> )
+      }
+    </div>
     )
 }
 
