@@ -50,7 +50,8 @@ function Lodging ()
 
   const HousingById = advertisements.filter( findById )
 
-  const currentLodging = HousingById[0]
+  const currentLodging = HousingById[ 0 ]
+  console.log( "currentLodging : ", currentLodging )
   
   return (
     <>
@@ -68,9 +69,9 @@ function Lodging ()
           >
             { lodgingTitleMenu === 'Description'
               ?
-              <p>{ lodgingMenus.description }</p>
+              <p>{ currentLodging.description }</p>
               : <ul>
-                { lodgingMenus.equipments.map( ( equipment ) =>
+                { currentLodging.equipments.map( ( equipment ) =>
                   <li key={ equipment }>
                     { equipment }
                   </li> ) }
