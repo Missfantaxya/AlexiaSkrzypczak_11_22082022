@@ -5,7 +5,6 @@ import Rate from "./Rate"
 
 function HostDetails ( {currentHost, currentRate} )
 {
-  // console.log( "currentHost : ", currentHost ) //*
   // console.log("currentRate : ",currentRate) //*
   return (
     <div className="host__details">

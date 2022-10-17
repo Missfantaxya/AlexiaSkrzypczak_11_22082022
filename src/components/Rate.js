@@ -2,7 +2,7 @@ import './Rate.css'
 
 
 
-function Rate ()
+function Rate (currentRate)
 {
 const Star = (color) => (
   <div className='host__star'>
@@ -18,7 +18,9 @@ const Star = (color) => (
   </div>
   )
 
-
+  // console.log( "currentRate : ", currentRate ) //* string
+  const hostRate = parseInt( currentRate.currentRate , 10 ) 
+  console.log( "hostRate : ", hostRate ) //*
 
     return (
       <div className='host__rate'>
