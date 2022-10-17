@@ -1,5 +1,7 @@
 import "./Home.css"
+
 import advertisements from "../data/advertisements"
+
 import Mask from "./Mask.js"
 import Thumb from "./Thumb"
 

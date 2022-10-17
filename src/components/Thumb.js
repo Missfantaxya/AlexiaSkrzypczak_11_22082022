@@ -2,17 +2,16 @@ import { Link } from "react-router-dom"
 
 import "./Thumb.css"
 
-// TODO rendre le lien dynamique (https://reactrouter.com/en/main/route/route#dynamic-segments)
-
 function Thumb ( {
   id,
   title,
   cover,
 } )
-  {
+{
+  
 return (
-    <article className="thumb">
-      <Link to="/lodging"  >
+  <article className="thumb" id={ id }>
+      <Link to={`/lodging/:${id}`}  >
         <div className="thumb__background" >
           <img
             className="thumb__cover"
