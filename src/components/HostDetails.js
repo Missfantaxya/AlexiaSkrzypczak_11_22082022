@@ -3,11 +3,14 @@ import "./HostDetails.css"
 import Host from "./Host"
 import Rate from "./Rate"
 
-function HostDetails() {
+function HostDetails ( {currentHost, currentRate} )
+{
+  // console.log( "currentHost : ", currentHost ) //*
+  // console.log("currentRate : ",currentRate) //*
   return (
     <div className="host__details">
-          <Host />
-          <Rate />
+          <Host currentHost={ currentHost }/>
+          <Rate currentRate={ currentRate }/>
     </div>
   )
 }

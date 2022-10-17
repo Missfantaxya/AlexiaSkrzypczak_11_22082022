@@ -23,6 +23,10 @@ border-radius: 50%;
 background-color: #C4C4C4;
 }
 
+.host__img{
+  border-radius: 50%;
+}
+
 @media screen and (min-width: 1440px) {
   .host{
     /* width: 13.468%; */

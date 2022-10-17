@@ -1,13 +1,17 @@
 import "./Host.css"
 
-function Host() {
+function Host ( {currentHost} )
+{
+  const currentHostName = currentHost.name.split( ' ' )
+
   return (
     <div className="host">
       <div className="host__identity">
-        <p>Alexandre</p>
-        <p>Dumas</p>
+        <p>{ currentHostName[0] }</p>
+        <p>{currentHostName[1]}</p>
       </div>
       <div className="host__picture">
+        <img className="host__img" src={currentHost.picture} alt="portrait du propiétaire" />
       </div>
     </div>
   )
