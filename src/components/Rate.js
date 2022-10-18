@@ -1,11 +1,8 @@
 import './Rate.css'
 
-
-
 function Rate (currentRate)
 {
-const Star = (color) => (
-  <div className='host__star'>
+  const Star = (color) => (
     <svg
       viewBox="0 0 16 16"
       fill="none"
@@ -15,11 +12,12 @@ const Star = (color) => (
         fill={ color }
       />
     </svg>
-  </div>
   )
+
   
   let fullStar = Star( "#FF6060" )
   let emptyStar = Star( "#E3E3E3" )
+
   
   const currentHostRate = parseInt( currentRate.currentRate , 10 ) 
 
@@ -34,13 +32,13 @@ const Star = (color) => (
       stars.push( emptyStar )
     }
   }
-
+  
   return (
-    <div className='host__rate'>
+      <div className='host__rate'>
       {
-        stars.map( ( star ) =>
-          <div className='star__wrapper' key={ star.id }>
-              { star }
+        stars.map( ( star,index ) =>
+          <div key={index} className='host__star' >
+            { star }
           </div> )
       }
     </div>
