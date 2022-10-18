@@ -13,6 +13,7 @@ function Rate (currentRate)
       />
     </svg>
   )
+
   
   let fullStar = Star( "#FF6060" )
   let emptyStar = Star( "#E3E3E3" )
@@ -31,16 +32,15 @@ function Rate (currentRate)
       stars.push( emptyStar )
     }
   }
-  //TODO trouver pour mettre une clé unique
   
   return (
       <div className='host__rate'>
-      {/* {
-        stars.map( ( star ) =>
-          <div key={star.keys} className='host__star' >
+      {
+        stars.map( ( star,index ) =>
+          <div key={index} className='host__star' >
             { star }
           </div> )
-      } */}
+      }
     </div>
     )
 }
