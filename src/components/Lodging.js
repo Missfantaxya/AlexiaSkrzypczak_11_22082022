@@ -41,7 +41,7 @@ function Lodging ()
   
   return (
     <>
-      <Carrousel />
+      <Carrousel pictures={ currentLodging.pictures } />
       <div className="lodging__details">
         <LodgingTitle currentLodging={ currentLodging } />
         <HostDetails currentHost={ currentLodging.host } currentRate={ currentLodging.rating} />

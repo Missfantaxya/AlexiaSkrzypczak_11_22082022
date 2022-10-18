@@ -2,6 +2,11 @@
   height: 16rem;
   margin-bottom: 0.9rem;
   position: relative;
+  /* overflow: hidden; */
+}
+
+.carroussel__container{
+  display: flex;
 }
 
 .carrousel__button{
@@ -16,6 +21,10 @@
 
 .carrousel__previous{
   left:0;
+}
+
+.carrousel__previous:active + .carroussel__container {
+  transform: translateX(-100%);
 }
 
 .carrousel__next{

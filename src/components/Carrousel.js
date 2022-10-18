@@ -1,29 +1,34 @@
 import './Carrousel.css'
 
-import coverMobile from '../assets/statique-carrousel-mobile.png'
-import coverDesktop from '../assets/statique-carrousel-desktop.png'
-
-
-// FIX attention au retaillage image du json donc ternair non pertinente
 // passer par le css
 
-function Carrousel ()
+function Carrousel ({pictures})
 {
-  const OnDesktop = window.screen.width >= 1440;
-  const cover = !OnDesktop ? coverMobile : coverDesktop
+  // console.log("pictures : ",pictures) //* array
+  
+  const multipesPictures = pictures.length > 1
+  function handlClickPrevious ()
+  {
+  // https://www.youtube.com/watch?v=fjsJLcGWjcU
+  }
 
   return ( 
     <div className="carrousel">
-        <button className='carrousel__button carrousel__previous'>
-          précédent
-        </button>
-      <img
-        src={ cover }
-        alt="logement"
-        className="carrousel__picture" />
-        <button className='carrousel__button carrousel__next'>
-          suivant
-        </button>
+        {multipesPictures && <button className='carrousel__button carrousel__previous'>
+      précédent
+    </button>}
+      <div className='carroussel__container'>
+        {pictures.map((picture, index) =>
+          <img
+            key={index}
+          src={ picture }
+          alt="logement"
+          className = "carrousel__picture" />
+        ) }
+      </div>
+      {multipesPictures &&  <button className='carrousel__button carrousel__next'>
+      suivant
+    </button>}
     </div>
   )
 }
