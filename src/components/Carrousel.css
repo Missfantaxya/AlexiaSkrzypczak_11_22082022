@@ -2,7 +2,18 @@
   height: 16rem;
   margin-bottom: 0.9rem;
   position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
+
+.carrousel__picture{
+  height: 100%;
+  width:100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+
 
 .carrousel__button{
   background-image: url(../assets/arrow-mobile.svg);
@@ -16,6 +27,10 @@
 
 .carrousel__previous{
   left:0;
+}
+
+.carrousel__previous:active + .carroussel__container {
+  transform: translateX(-100%);
 }
 
 .carrousel__next{

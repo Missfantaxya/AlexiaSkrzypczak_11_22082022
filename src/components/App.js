@@ -9,7 +9,7 @@ import About from './About'
 import NotFound from './NotFound'
 import Footer from './Footer'
 
-// FIXME route dynamique avec id inventé doit conduire à 404.
+
 function App ()
 {
   let {id} = useParams()
