@@ -3,10 +3,7 @@ import { useState } from 'react'
 import './Carrousel.css'
 
 function Carrousel ({pictures})
-{
-  console.log( "pictures : ", pictures ) //* array
-  // console.log("pictures.lenght -1 : ",pictures.length - 1)//*
-  
+{ 
   const [ pictureIndex, setPictureIndex ] = useState( 0 )
   
   function HandlePreviousClick ()

@@ -32,10 +32,10 @@
   display: block;
   position: relative;
   border-radius: 5px;
-  top:-5px;
+  top:-5.75px;
   z-index: -1;
   background-color: #F7F7F7;
-  padding: 1.43875rem 0.431875rem 0.8125rem 0.719375rem;
+  padding: 1.43875rem 0.431875rem 0.08125rem 0.719375rem;
   font-size: 0.75rem;
   line-height: 142.6%;
   width: 100%;
@@ -57,5 +57,10 @@
   .dropdown__button {
     padding: 0 1.25rem;
     height: var(--button-height);
+  }
+
+  .dropdownn__content--open{
+    top:-10px;
+    padding: 2.5rem 0.75rem 1.6875rem 1.25rem;
   }
 }

@@ -1,6 +1,7 @@
 .carrousel{
-  height: 16rem;
-  margin-bottom: 0.9rem;
+  height: 15.9375rem;
+  margin-top: 1.6875rem;
+  margin-bottom: 0.9375rem;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -8,7 +9,7 @@
 
 .carrousel__picture{
   height: 100%;
-  width:100%;
+  width: 100%;
   object-position: center;
   object-fit: cover;
 }
@@ -17,16 +18,16 @@
 
 .carrousel__button{
   background-image: url(../assets/arrow-mobile.svg);
-  width:24px;
-  height:24px;
+  width: 24px;
+  height: 24px;
   position: absolute;
-  top:45%;
+  top: 45%;
   overflow: hidden;
   color: transparent;
 }
 
 .carrousel__previous{
-  left:0;
+  left: 0;
 }
 
 .carrousel__previous:active + .carroussel__container {
@@ -34,19 +35,20 @@
 }
 
 .carrousel__next{
-  right:0;
+  right: 0;
   transform: rotate(180deg);
 }
 
 @media screen and (min-width: 1440px) {
   .carrousel{
-    height: 26rem;
-    margin-bottom: 1.8rem;
+    height: 25.9375rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.875rem;
   }
   .carrousel__button{
     background-image: url(../assets/arrow-desktop.svg);
-    top:35%;
-    width:96px;
-    height: 120px;
+    top: 35%;
+    width: 96px;
+    height: 119.64px;
   }
 }
