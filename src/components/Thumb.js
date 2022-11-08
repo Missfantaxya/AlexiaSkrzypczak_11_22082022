@@ -8,16 +8,23 @@ function Thumb ( {
   cover,
 } )
 {
-  
-return (
-  <article className="thumb" id={ id }>
-      <Link to={`/lodging/:${id}`}  >
-        <div className="thumb__background" >
-          <img
+  const theCover = <img
             className="thumb__cover"
             src={ cover }
-            alt=""
-          />
+            alt="" />
+  
+  const hasCover =  cover  !== undefined
+  
+  const notCover = "thumb--red"
+
+return (
+  <article
+    className={ `thumb ${ !hasCover ? notCover : "" }` }
+    id={ id }
+  >
+      <Link to={`/lodging/:${id}`}  >
+      <div className="thumb__background" >
+        { hasCover && theCover }
           <h2 className="thumb__content">
             { title }
           </h2>

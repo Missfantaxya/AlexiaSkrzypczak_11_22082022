@@ -15,7 +15,7 @@ function Dropdown ({classStyle, menu, children})
 
   const style = `dropdown ${classStyle}`
 
-  const dropdownnContentClassName =!open? 'dropdownn__content--close' : 'dropdownn__content--open'
+  const dropdownnContentClassName = !open ? 'dropdownn__content--close' : 'dropdownn__content--open'
   const arrowDirectionClassName = !open ? 'dropdown__arrow--close' : 'dropdown__arrow--open'
 
   return (

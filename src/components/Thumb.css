@@ -1,10 +1,14 @@
-/* FIXME décalage entre fond rouge et image de la cover */
+
 .thumb{
-  /* margin: 3.125rem; */
   height: 15.9rem;
-  background-color: #FF6060;
   border-radius: 10px;
   margin-bottom: 1.25rem;
+  overflow-y: hidden;
+  border: none;
+}
+
+.thumb--red{
+  background-color: #FF6060;
 }
 
 .thumb__background{
@@ -13,13 +17,12 @@
   rgba(255, 255, 255, 0) 0%,
   rgba(0, 0, 0, 0.5) 100%);
   border-radius: 10px;
-  overflow:hidden;
   position: relative;
 }
 
 .thumb__cover{
   height: 100%;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 
 .thumb__content{
