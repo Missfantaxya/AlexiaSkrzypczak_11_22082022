@@ -1,6 +1,5 @@
 .header__nav{
-  width: 42%;
-  height:1rem;
+  width: 41.75%;
 }
 .nav__list{
   color: #FF6060;
@@ -8,18 +7,48 @@
   justify-content: space-between;
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  /* font-size: 0.75rem; */
+  font-size: 1.477833vh;
+}
+
+.nav__item--home{
+  width: 15.72vw;
+  /* height: 1.0625rem; */
+  height: 2.0936vh;
+}
+
+.nav__item--about{
+  width: 18.919vw;
+  /* height: 1.0625rem; */
+  height: 2.0936vh;
 }
 
 @media screen and (min-width: 1440px) {
   .header__nav{
-  width: 25%;
-  height:2.1rem;
+  width: 24.952%;
+  /* height:2.125rem; */
+  
 }
 /* TODO revoir écart entre les liens */
   .nav__list{
-    font-size: 1.3rem;
+    height: 3.3204vh;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    /* font-size: 1.5rem; */
+    font-size: 2.34375vh;
     text-transform: capitalize;
-    padding-left: 3.6rem;
+   
+    text-align: end;
+  }
+
+  .nav__item--home{
+    width: 9.4444444444vw;
+    height: 3.3204vh;
+  }
+
+  .nav__item--about{
+    width: 8.0555555556vw;
+    height: 3.3204vh;
   }
 }
