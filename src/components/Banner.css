@@ -2,14 +2,14 @@
   background-image: url(../assets/logo-header.png );
   background-position: left;
   background-repeat: no-repeat;
-  width: 39.2vw;
-  height: 5.91133vh;
+  width: 38.6326vw;
+  height: 5.788178vh;
   background-size: contain;
 }
 
 @media screen and (min-width: 1440px) {
   .header__logo{
-    width: 13.9808vw;
+    width: 14.583334vw;
     height: 6.640625vh;
   }
 }
