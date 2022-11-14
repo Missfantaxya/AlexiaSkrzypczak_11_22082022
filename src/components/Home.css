@@ -1,16 +1,29 @@
 .thumbs{
-    padding: 0;
     border-radius: 25px;
     display: grid;
-    row-gap: 1.25rem;
+    row-gap: 2.46306vh;;
+    justify-items: center;
   }
+
+@media screen and (min-width:555px){
+  .thumbs{
+    padding: 5.46875vh 3.472223vw;
+    column-gap: 4.166667vw;
+    row-gap: 4.8828125vh;
+    background-color: #F7F7F7;
+  }
+}
+
+/* FIXME écran grend mobile en paysage */
+
+@media screen and (min-width:801px) and (max-width: 1439px) {
+  .thumbs{
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 @media screen and (min-width: 1440px) {
   .thumbs{
-    padding: 3.5rem 3.125rem;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 3.75rem;
-    row-gap: 3.125rem;
-    background-color: #F7F7F7;
   }
 }

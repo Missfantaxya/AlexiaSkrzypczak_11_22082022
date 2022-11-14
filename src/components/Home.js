@@ -5,8 +5,7 @@ import advertisements from "../data/advertisements"
 import Mask from "./Mask.js"
 import Thumb from "./Thumb"
 
-//FIXME n'ouvre pas la page lodging en haut (au même endroit cliqué que sur la
-//page home)
+//FIXME n'ouvre pas la page lodging en haut 
 
 function Home ()
 {

@@ -41,9 +41,12 @@
     background-size: cover;
   }
 
+  /* FIXME grand écran mode portrait */
   .mask__content{
-    flex-direction: row;
+    display : block;
+    text-align: center;
     font-size: 4.6875vh;
+    line-height: 6.684571vh;
     font-weight: 500;
     width: 48.95834vw;
     height: 6.640625vh;

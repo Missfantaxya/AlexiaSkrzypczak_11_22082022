@@ -1,6 +1,6 @@
 
 .thumb{
-  height: 15.9rem;
+  height: 31.40395vh;
   border-radius: 10px;
   overflow: hidden;
   border: none;
@@ -29,16 +29,19 @@
 .thumb__content{
   position : absolute;
   bottom: 0;
+  margin: 0 5.25137vw 1.84729vh 5.25137vw; 
   color: #FFFFFF;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   font-weight: 500;
-  margin: 0 1.231875rem 0.9375rem 1.231875rem; 
-
 }
 
 @media screen and (min-width: 1440px) {
   .thumb{
-    width: 21.2rem;
-    height: 21.2rem;
+    width: 23.611112vw;
+    height: 33.203125vh;
+  }
+
+  .thumb__content{
+    margin: 0 1.388889vw 1.953125vh 1.388889vw; 
   }
 }
