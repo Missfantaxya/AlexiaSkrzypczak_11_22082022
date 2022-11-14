@@ -1,17 +1,15 @@
 .header__logo{
   background-image: url(../assets/logo-header.png );
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
-  width: 44%;
-  /* height: 3rem; */
+  width: 39.2vw;
   height: 5.91133vh;
+  background-size: contain;
 }
 
 @media screen and (min-width: 1440px) {
   .header__logo{
-    width: 17%;
-    /* height: 4.25rem; */
+    width: 13.9808vw;
     height: 6.640625vh;
-    background-size: cover;
   }
 }
