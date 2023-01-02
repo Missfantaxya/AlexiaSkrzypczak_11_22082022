@@ -1,8 +1,9 @@
 
 
 .lodging__dropdowns{
-  font-size: 0.8125rem;
-  margin-bottom: 0.875rem;
+  font-weight: 500;
+  font-size: 1.60099vh;
+  margin-bottom: 1.72414vh;;
 }
 
 @media screen and (min-width: 1440px) {

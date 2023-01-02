@@ -2,8 +2,8 @@
 display : flex;
 justify-content: space-between;
 align-items: center;
-width: 40.6%;
-height: 2.0625rem;
+width: 36.3vw;
+height: 100%;
 
 }
 .host__identity{
@@ -11,14 +11,14 @@ height: 2.0625rem;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-end;
-  height: 2rem;
-  width: 5.813rem;
-  font-size: 0.75rem;
+  height: 100%;
+  width: 24.80vw;
+  font-size: 3.2vw;
 }
 
 .host__picture{
-width: 2rem;
-height: 2rem;
+width: 8.53vw;
+height: 8.53vw;
 border-radius: 50%;
 background-color: #C4C4C4;
 }
@@ -27,21 +27,31 @@ background-color: #C4C4C4;
   border-radius: 50%;
 }
 
+@media screen and (min-width: 550px) {
+  .host__identity{
+    font-size: 2.16vh;
+  }
+  .host__picture{
+    width: 5.77vh;
+    height: 5.77vh; 
+  }
+}
+
+/* TODO voir pour diminuer le break point */
 @media screen and (min-width: 1440px) {
   .host{
-    /* width: 13.468%; */
-    width: 167px;
-    height: 4rem;
+    width: 11.6vw;
+    height: 6.25vh;
   }
   .host__identity{
-    height: 3.25rem;
-    width: 5.8125rem;
-    font-size: 1.125rem;
-    margin-right: 0.625rem;
+    height: 5.079vh;
+    width: 6.459vw;
+    font-size: 1.25vw;
+    margin-right: 0.695vw;
   }
 
   .host__picture{
-  width: 4rem;
-  height: 4rem;
+  width: 4.445vw;
+  height: 4.445vw;
   }
 }
