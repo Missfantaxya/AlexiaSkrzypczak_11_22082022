@@ -13,6 +13,17 @@
   align-items: center;
 }
 
+@media screen and (min-width: 550px) {
+  .host__rate{
+    width: 17.68vh;
+  }
+
+  .host__star{
+    height: 2.706vh;
+    width: 2.706vh;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .host__rate{
     width: 14.445vw;
