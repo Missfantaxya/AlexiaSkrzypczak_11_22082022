@@ -1,6 +1,6 @@
 .header__nav{
   --font-size-nav: max(min(3.2vw,1.5rem),0.75rem);
-  width: max(min(37.334vw,309px),123px);
+  width: max(min(37.334vw,309px),120px);
 }
 .nav__list{
   color: #FF6060;
@@ -17,7 +17,7 @@
 }
 
 .nav__item--about{
-  width:max(min(18.919vw,116px), 71px);
+  width:max(min(18.919vw,116px), 65px);
 }
 
 @media screen and (min-width: 700px) {
