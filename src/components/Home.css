@@ -16,13 +16,13 @@
 
 /* FIXME écran grand mobile en paysage */
 
-@media screen and (min-width:801px) and (max-width: 1439px) {
+@media screen and (min-width:600px) {
   .thumbs{
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 900px) {
   .thumbs{
     grid-template-columns: 1fr 1fr 1fr;
   }

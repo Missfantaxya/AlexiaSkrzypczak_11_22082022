@@ -1,6 +1,7 @@
 
 .thumb{
-  height: 31.40395vh;
+  max-width : 350px;
+  height: min(31.40394vh,340px);
   border-radius: 10px;
   overflow: hidden;
   border: none;
@@ -35,10 +36,12 @@
   font-weight: 500;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 700px) {
   .thumb{
-    width: 23.611112vw;
-    height: 33.203125vh;
+    /* max-width: 450px; */
+    /* width: 23.611112vw; */
+    height: min(33.203125vh,340px);
+    /* height: 33.203125vh; */
   }
 
   .thumb__content{
