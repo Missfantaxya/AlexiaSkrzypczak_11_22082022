@@ -1,29 +1,40 @@
 .thumbs{
     border-radius: 25px;
     display: grid;
-    row-gap: 2.46306vh;;
+    row-gap: 5.33333vw;
     justify-items: center;
   }
 
-@media screen and (min-width:555px){
+@media screen and (min-width: 410px){
   .thumbs{
-    padding: 5.46875vh 3.472223vw;
-    column-gap: 4.166667vw;
-    row-gap: 4.8828125vh;
+    padding: 10.09009vw 0;
     background-color: #F7F7F7;
   }
 }
 
-/* FIXME écran grand mobile en paysage */
-
-@media screen and (min-width:600px) {
+@media screen and (min-width:700px) {
   .thumbs{
     grid-template-columns: 1fr 1fr;
+    column-gap: 1.428578vw;
+    row-gap: 2.85714vw;
+    padding: 2.28571vw 2.14285vw;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1150px) {
   .thumbs{
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4.16667vw;
+    row-gap: 3.47222vw;
+    padding: 3.88888vw 3.47222vw;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .thumbs{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1.6vw;
+    row-gap: 1.6vw;
+    padding: 3.88888vw 3.47222vw;
   }
 }
