@@ -7,6 +7,6 @@
 
 @media screen and (min-width: 1440px) {
   .header{
-    margin: 2.5rem 6.3rem 0 6.3rem ;
+    margin: min(2.77777vw, 55px) min(6.94444vw, 150px) 0 min(6.94444vw, 150px);
   }
 }
