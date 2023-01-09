@@ -1,8 +1,8 @@
 .home__mask{
-  margin-top: 1.970444vh;
-  margin-bottom: 2.70936vh;
+  margin-top: 4.26666vw;
+  margin-bottom: 5.8666vw;
   border-radius: 10px;
-  height: 13.66996vh;
+  height: min(29.6vw, 120px);
   background-color: #F6F6F6;
   background: url(../assets/mask-mobile.png);
   background-repeat: no-repeat;
@@ -23,33 +23,46 @@
   flex-direction: column;
   margin-left: 4.2629vw;
   width: 57.8157vw;
-  height: 5.91133vh;
+  height: max(min(12.8vw, 44%), 48px);
   color: #FFFFFF;
-  font-size: 2.955665vh;
-  line-height: 2.955665vh;
+  font-size: max(min(6.4vw, 30px), 20px);
+  line-height: 100%;
   font-weight: 500;
   }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 700px) {
   .home__mask{
-    margin-top: 6.15235vh;
-    margin-bottom: 4.19922vh;
-    height: 21.7774vh;
+    margin-top: 3.38472vw;
+    margin-bottom: 2.98611vw;
+    height: min(15.48612vw, 225px);
     background-color: #F6F6F6;
     background: url(../assets/mask-desktop.png);
-    background-repeat: no-repeat;
     background-size: cover;
   }
 
-  /* FIXME grand écran mode portrait */
   .mask__content{
     display : block;
     text-align: center;
-    font-size: 4.6875vh;
-    line-height: 6.684571vh;
-    font-weight: 500;
+    font-size: max(min(3.33333vw, 64px), 24px);
+    line-height: 142.6%;
     width: 48.95834vw;
-    height: 6.640625vh;
-    margin: 7.6171875vh 18.194444vw 7.51953125vh 18.95834vw;
+    height: min(4.72223vw,31%);
+    margin: 5.41666vw 18.19444vw 5.34722vw 18.95834vw;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .home__mask{
+    margin-top: 3.38472vw;
+    margin-bottom: 2.98611vw;
+    height: min(15.48612vw, 225px);
+  }
+
+  .mask__content{
+    font-size: min(2.88vw, 88px);
+    line-height: 142.6%;
+    width: 100%;
+    height: min(4.72223vw,31%);
+    margin: 0;
   }
 }
