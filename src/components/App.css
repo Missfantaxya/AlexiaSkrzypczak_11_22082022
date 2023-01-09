@@ -9,11 +9,11 @@
 
 .main{
   flex-grow: 1;
-  margin: 0 1.25rem;
+  margin: 0 5.33333vw;
 }
 
 @media screen and (min-width: 1440px) {
   .main{
-    margin: 0 6.25rem;
+    margin: 0 min(6.94444vw, 150px);
   }
 }
