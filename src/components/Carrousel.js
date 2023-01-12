@@ -31,12 +31,9 @@ function Carrousel ({pictures})
       setPictureIndex( nextPicture )
     }
   }
-
-
-
   
   const multipesPictures = pictures.length > 1
-
+  console.log(pictures)
   return ( 
     <div className="carrousel">
       { multipesPictures &&
@@ -47,11 +44,14 @@ function Carrousel ({pictures})
           précédent
         </button>
       }
-          <img
-          src={ pictures[pictureIndex] }
-          alt="logement"
+        <img
+        src={ pictures[pictureIndex] }
+        alt="logement"
         className="carrousel__picture"
-      />
+        />
+        { multipesPictures &&
+        <p className='carrousel__counter'> {pictureIndex+1} / {pictures.length} </p>
+      }      
       { multipesPictures &&
         <button
           className='carrousel__button carrousel__next'
