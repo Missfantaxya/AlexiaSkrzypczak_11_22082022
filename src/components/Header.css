@@ -6,6 +6,13 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 374px) {
+  .header{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .header{
     padding: min(2.77777vw, 55px) min(6.94444vw, 150px) 0 min(6.94444vw, 150px);

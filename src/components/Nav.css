@@ -20,6 +20,13 @@
   width:max(min(18.919vw,116px), 65px);
 }
 
+@media screen and (max-width: 374px) {
+  .header__nav{
+    width: 90%;
+    margin-top: 1rem;
+  }
+}
+
 @media screen and (min-width: 700px) {
   .nav__list{
     text-transform: capitalize;
