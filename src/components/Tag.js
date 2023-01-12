@@ -7,7 +7,7 @@ function Tag ( { currentTags } )
       { currentTags.map( ( tag ) =>
         <li
           key={ tag }
-          className={ `tag ${ tag.length > 12 ? "tag--long" : "tag--short" }` }>
+          className="tag" >
           { tag }
         </li>
       )}
