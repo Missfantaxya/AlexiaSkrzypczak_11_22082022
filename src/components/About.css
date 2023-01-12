@@ -17,6 +17,9 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.about__dropdowns {
+  font-size: min(3.46666vw, 24px);
+}
 .dropdown__about .dropdownn__content--open{
   top:-5.77px;
   padding-top: 1.4425rem;
@@ -31,13 +34,8 @@
     background-image: url(../assets/about-mask-desktop.png);
   }
 
-  .about__dropdowns {
-    font-size: 1.5rem;
-  }
-
   .dropdown__about .dropdownn__content--open {
     top:-9px;
     padding: 2.25rem 1.6875rem 1.1875rem 1.125rem;
-    font-size: 1.5rem;
   }
 }

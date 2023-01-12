@@ -1,26 +1,25 @@
 .dropdown{
   position: relative;
-  margin: min(2.46305vh,31px) auto;
+  margin: max(min(5.33333vw, 31px), 20px) auto;
 }
-
-/* TODO réduire le margin bottom quand n'import quel menu est déroulé (pas que le dernier) */
 
 .dropdown__about:last-child{
-  margin-bottom: min(20.68965vh,201px);
+  margin-bottom: min(44.8vw, 201px);
 }
 
-/* FIX ME : ne fonctionne pas avec firefox */
-.dropdown__about:last-child:has(.dropdown__arrow--open){
-  margin-bottom: 0;
+/* ne fonctionne pas avec firefox */
+.dropdown__about:has(.dropdown__arrow--open) ~ .dropdown__about:last-child,
+.dropdown__about:last-child:has(.dropdown__arrow--open) {
+  margin-bottom: min(5.33333vw, 30px);
 }
 
 .dropdown__button{
   background-color: #FF6060;
   color:#FFFFFF;
   width:100%;
-  height: 1.870625rem;
+  height: max(min(8vw, 47px), 25px);
   border-radius: 5px;
-  padding: 0 0.64rem;
+  padding: 0 max(min(2.66666vw, 20px), 10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +35,6 @@
 
 .dropdownn__content--close{
   display: none;
-  
 }
 
 .dropdownn__content--open{
@@ -47,11 +45,16 @@
   z-index: -1;
   background-color: #F7F7F7;
   padding: calc(1.43875rem + 5.75px) 0.431875rem 0.08125rem 0.719375rem;
-  font-size: 0.75rem;
+  font-size: max(min(3.2vw, 24px), 12px);
   line-height: 142.6%;
   width: 100%;
 }
 
+@media screen and (min-width: 1024px) {
+  .dropdown__about {
+    width: 90%;
+  }
+}
 @media screen and (min-width: 1440px) {
   .dropdown__lodging {
     --button-height :3.25rem;
@@ -61,12 +64,11 @@
 
   .dropdown__about{
     --button-height :2.9375rem;
-    width: 63.9375rem;
-    margin: max(3.02724vh,20px) auto;
+    width: min(71.04166vw, 1500px);
+      margin: max(min(2.15277vw, 40px), 20px) auto;
   }
 
-  .dropdown__button {
-    padding: 0 1.25rem;
+        .dropdown__button {
     height: var(--button-height);
   }
 
