@@ -3,6 +3,8 @@
   margin: min(2.46305vh,31px) auto;
 }
 
+/* TODO réduire le margin bottom quand n'import quel menu est déroulé (pas que le dernier) */
+
 .dropdown__about:last-child{
   margin-bottom: min(20.68965vh,201px);
 }
@@ -44,7 +46,7 @@
   top:-5.75px;
   z-index: -1;
   background-color: #F7F7F7;
-  padding: 1.43875rem 0.431875rem 0.08125rem 0.719375rem;
+  padding: calc(1.43875rem + 5.75px) 0.431875rem 0.08125rem 0.719375rem;
   font-size: 0.75rem;
   line-height: 142.6%;
   width: 100%;
