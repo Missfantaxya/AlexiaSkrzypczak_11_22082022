@@ -1,5 +1,5 @@
 .carrousel{
-  height: 15.9375rem;
+  height: min(68vw,400px);
   margin-top: 1.6875rem;
   margin-bottom: 0.9375rem;
   position: relative;
@@ -20,12 +20,16 @@
 
 .carrousel__button{
   background-image: url(../assets/arrow-mobile.svg);
-  width: 24px;
-  height: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 6.4vw;
+  height: 6.4vw;
   position: absolute;
   top: 45%;
   overflow: hidden;
   color: transparent;
+  
 }
 
 .carrousel__previous{
@@ -41,17 +45,11 @@
   transform: rotate(180deg);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 700px) { 
   .carrousel{
     height: 25.9375rem;
     margin-top: 1.25rem;
     margin-bottom: 1.875rem;
-  }
-  .carrousel__button{
-    background-image: url(../assets/arrow-desktop.svg);
-    top: 35%;
-    width: 96px;
-    height: 119.64px;
   }
   .carrousel__counter{
     display: block;
@@ -59,5 +57,13 @@
     text-align: center;
     position: relative;
     bottom: 54.92px;
+    font-size: max(min(1.25vw,32px),1rem);
   }
+}
+
+@media screen and (min-width: 1440px) {
+  .carrousel__button{
+    height: min(5.5vw,85px);
+  }
+  
 }

@@ -33,7 +33,6 @@ function Carrousel ({pictures})
   }
   
   const multipesPictures = pictures.length > 1
-  console.log(pictures)
   return ( 
     <div className="carrousel">
       { multipesPictures &&
