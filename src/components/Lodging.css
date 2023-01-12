@@ -3,7 +3,7 @@
 .lodging__dropdowns{
   font-weight: 500;
   font-size: 1.60099vh;
-  margin-bottom: 1.72414vh;;
+  margin-bottom: 1.72414vh;
 }
 
 @media screen and (min-width: 1440px) {
@@ -18,10 +18,11 @@
     display: flex;
     justify-content: space-between;
     font-size: 1.125rem;
+    margin-bottom: 0.875rem;
   }
 
   .dropdown__lodging .dropdownn__content--open {
     font-size: 1.125rem;
-    height: calc(100% - var(--button-height));
+    height: calc(calc(100% - var(--button-height)) + 10px);
   }
 }
