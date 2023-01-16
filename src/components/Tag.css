@@ -19,7 +19,6 @@
   border-radius: 5px;
   color: #FFFFFF;
   font-weight: 500;
-  line-height: 142.6%;
   font-size: max(min(2.66666vw,14px),10px);
   padding :0 1rem;
 }
@@ -38,5 +37,6 @@
   .tag{
     border-radius: 10px; 
     height:max(min(1.38888vw,35px),25px);
+    font-size: max(min(0.97222vw,18px),10px);
   }
 }

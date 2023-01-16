@@ -1,11 +1,11 @@
 .lodging__title{
-  font-size: min(4.8vw,42px);
+  font-size: max(min(4.8vw,42px),14px);
   font-weight: 500;
 }
 
 .lodging__content{
   line-height: 142.6%;
-  margin-bottom: min(1.33333vw,10Px);
+  margin-bottom: min(1.33333vw,10px);
 }
 
 .lodging__location{

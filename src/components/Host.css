@@ -8,7 +8,7 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-end;
-  font-size: min(3.2vw, 26px);
+  font-size: max(min(3.2vw, 26px),12px);
   margin-right: 2.8vw;
 }
 

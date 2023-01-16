@@ -39,3 +39,9 @@
     padding: 2.25rem 1.6875rem 1.1875rem 1.125rem;
   }
 }
+
+@media screen and (min-width: 700px) {
+  .about__dropdowns {
+    font-size: min(3.46666vw, 36px);
+  }
+}

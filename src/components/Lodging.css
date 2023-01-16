@@ -1,24 +1,27 @@
 .lodging__dropdowns{
   font-weight: 500;
-  font-size: 1.60099vh;
-  margin-bottom: 1.72414vh;
+  font-size: max(min(3.46666vw, 20px),12px);
 }
 
 @media screen and (min-width: 700px) {
   .lodging__details{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.42857vw;
+  }
+  .lodging__dropdowns {
+    --lodging-dropdowns: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.97222vw;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .lodging__dropdowns {
     --lodging-dropdowns: auto;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.125rem;
-    margin-bottom: 0.875rem;
+    font-size: min(1.25vw, 67px);
+    margin-bottom: min(0.97222vw,35pxpx);
   }
 
   .dropdown__lodging .dropdownn__content--open {
