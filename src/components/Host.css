@@ -1,61 +1,40 @@
 .host{
   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 36.3vw;
-    height: 100%;
+  justify-content: flex-end;
+  align-items: center;
 }
 .host__identity{
   display :flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-end;
-  height: 100%;
-  width: 24.80vw;
-  font-size: 3.2vw;
+  font-size: min(3.2vw, 26px);
+  margin-right: 2.8vw;
 }
 
 .host__picture{
   width: 8.53vw;
-    height: 8.53vw;
-    border-radius: 50%;
-    background-color: #C4C4C4;
+  height: 8.53vw;
+  border-radius: 50%;
+  background-color: #C4C4C4;
 }
 
 .host__img{
   border-radius: 50%;
 }
 
-@media screen and (min-width: 700px) {
-  .host{
-    width: max(11.6vw, 181px);
-      height: 6.25vh;
-  }
-        /* .host__identity {
-          height: 5.079vh;
-          font-size: max(1.25vw, 18px);
-          margin-right: 0.695vw;
-  }
-        .host__picture {
-          width: 4.445vw;
-          height: 4.445vw;
-        }
-    */
-}
-
 @media screen and (min-width: 1440px) {
   .host {
     width: 11.6vw;
-    height: 6.25vh;
-  }
-        .host__identity {
-    height: 5.079vh;
-    width: 6.459vw;
+  } 
+  .host__identity {
+    height: 3.61111vw; 
+    line-height: 1.78vw;
     font-size: 1.25vw;
-    margin-right: 0.695vw;
+    margin-right: 0.69444vw;
   }
-        .host__picture {
-          width: 4.445vw;
-          height: 4.445vw;
+  .host__picture {
+    width: 4.445vw;
+    height: 4.445vw;
   }
 }

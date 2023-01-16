@@ -1,28 +1,37 @@
 .lodging__title{
-  font-size: 1.125rem;
+  font-size: min(4.8vw,42px);
   font-weight: 500;
 }
 
 .lodging__content{
   line-height: 142.6%;
-  margin-bottom: 0.3125rem;
+  margin-bottom: min(1.33333vw,10Px);
 }
 
 .lodging__location{
-  font-size: 0.875rem; 
+  font-size: min(max(3.73333vw,12px),20px); 
   line-height: 142.6%;
+}
+
+@media screen and (min-width: 700px) {
+  .lodging__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .lodging__location{
+    font-size: min(2.85714vw,25px); 
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .lodging__title{
-    font-size: 2.25rem;
+    font-size: min(2.5vw, 52px);
   }
-
   .lodging__content{
     margin-bottom: 0;
   }
-
   .lodging__location{
-    font-size: 1.125rem;
+    font-size: min(1.25vw, 40px);
   }
 }

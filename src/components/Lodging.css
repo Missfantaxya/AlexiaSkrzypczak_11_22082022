@@ -1,19 +1,19 @@
-
-
 .lodging__dropdowns{
   font-weight: 500;
   font-size: 1.60099vh;
   margin-bottom: 1.72414vh;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 700px) {
   .lodging__details{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.5rem;
   }
+}
 
-  .lodging__dropdowns{
+@media screen and (min-width: 1400px) {
+  .lodging__dropdowns {
     --lodging-dropdowns: auto;
     display: flex;
     justify-content: space-between;

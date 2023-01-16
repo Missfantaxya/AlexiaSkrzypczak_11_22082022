@@ -10,26 +10,24 @@
   width: 4vw;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 700px) {
   .host__rate{
-    width: 17.68vh;
+    width: max(11.6vw, 181px);
+    align-items: flex-end
   }
-
   .host__star{
-    height: 2.706vh;
-    width: 2.706vh;
+    height: 3vw;
+    width: 3vw;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .host__rate{
-    width: 14.445vw;
+    width: 13.61112vw;
     align-items: center;
   }
-
   .host__star{
     height: 2.084vw;
     width: 2.084vw;

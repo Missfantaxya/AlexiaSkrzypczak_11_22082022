@@ -24,13 +24,19 @@
   padding :0 1rem;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 700px) {
   .tags__list{
     margin-bottom: 0;
   }
   .tag{
     margin-top: 1.25rem;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .tag{
     border-radius: 10px; 
+    height:max(min(1.38888vw,35px),25px);
   }
 }
