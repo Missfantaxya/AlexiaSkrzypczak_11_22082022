@@ -1,29 +1,35 @@
 .host__rate{
-  width: 33%;
+  width: 26.133vw;
+  height: 4vw;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .host__star{
-  height: 0.9375rem;
-  width: 0.9375rem;
+  height: 4vw;
+  width: 4vw;
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .host__rate{
+    width: max(11.6vw, 181px);
+    align-items: flex-end
+  }
+  .host__star{
+    height: 3vw;
+    width: 3vw;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .host__rate{
-    /* width: 16.7742%; */
-    width: 208px;
-  }
-
-  .host__star{
-    height: 1.875rem;
-    width: 1.875rem;
-    display: flex;
-    justify-content: center;
+    width: 13.61112vw;
     align-items: center;
+  }
+  .host__star{
+    height: 2.084vw;
+    width: 2.084vw;
   }
 }

@@ -3,10 +3,7 @@ import { useState } from 'react'
 import './Carrousel.css'
 
 function Carrousel ({pictures})
-{
-  console.log( "pictures : ", pictures ) //* array
-  // console.log("pictures.lenght -1 : ",pictures.length - 1)//*
-  
+{ 
   const [ pictureIndex, setPictureIndex ] = useState( 0 )
   
   function HandlePreviousClick ()
@@ -34,12 +31,8 @@ function Carrousel ({pictures})
       setPictureIndex( nextPicture )
     }
   }
-
-
-
   
   const multipesPictures = pictures.length > 1
-
   return ( 
     <div className="carrousel">
       { multipesPictures &&
@@ -50,11 +43,14 @@ function Carrousel ({pictures})
           précédent
         </button>
       }
-          <img
-          src={ pictures[pictureIndex] }
-          alt="logement"
+        <img
+        src={ pictures[pictureIndex] }
+        alt="logement"
         className="carrousel__picture"
-      />
+        />
+        { multipesPictures &&
+        <p className='carrousel__counter'> {pictureIndex+1} / {pictures.length} </p>
+      }      
       { multipesPictures &&
         <button
           className='carrousel__button carrousel__next'

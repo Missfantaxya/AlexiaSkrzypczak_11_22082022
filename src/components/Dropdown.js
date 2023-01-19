@@ -2,11 +2,6 @@ import { useState } from 'react'
 
 import './Dropdown.css'
 
-const Arrow = ( sizeW, sizeH, color) => (
-  <svg width={ sizeW } height={ sizeH } fill={ color } xmlns="http://www.w3.org/2000/svg">
-    <path d="M13.8495 9.1944L15.2079 7.8283L7.60994 0.238037L0.0120036 7.83598L1.37042 9.1944L7.60994 2.95488L13.8495 9.1944Z"/>
-  </svg>
-)
 
 
 function Dropdown ({classStyle, menu, children})
@@ -15,8 +10,8 @@ function Dropdown ({classStyle, menu, children})
 
   const style = `dropdown ${classStyle}`
 
-  const dropdownnContentClassName =!open? 'dropdownn__content--close' : 'dropdownn__content--open'
-  const arrowDirectionClassName = !open ? 'dropdown__arrow--close' : 'dropdown__arrow--open'
+  const dropdownnContentClassName = !open ? 'dropdownn__content--close' : 'dropdownn__content--open'
+  const arrowDirectionClassName = !open ? 'dropdown__arrow dropdown__arrow--close' : 'dropdown__arrow dropdown__arrow--open'
 
   return (
     <div key={ menu } className={style}>
@@ -27,7 +22,9 @@ function Dropdown ({classStyle, menu, children})
       >
         <span>{ menu }</span>
         <span className={arrowDirectionClassName}>
-          { Arrow( 15.2, 8.96, "#ffffff" ) }
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.51 3.87003L15.74 2.10003L5.83995 12L15.7399 21.9L17.5099 20.13L9.37995 12L17.51 3.87003V3.87003Z" fill="white"/>
+          </svg>
         </span>
       </button>
       <div

@@ -2,9 +2,10 @@
   display : flex;
   flex-flow: row-reverse nowrap;
   justify-content: space-between;
+  align-items: center;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 700px) {
   .host__details{
     flex-flow: column nowrap;
     align-items: flex-end;

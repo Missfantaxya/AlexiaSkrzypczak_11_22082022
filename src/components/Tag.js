@@ -1,12 +1,16 @@
 import './Tag.css'
 
-function Tag({currentTags}) {
+function Tag ( { currentTags } )
+{
   return (
     <ul className='tags__list'>
-      {currentTags.map((tag)=>
-        <li key={tag} className='tag'>
-        {tag}
-      </li>)}
+      { currentTags.map( ( tag ) =>
+        <li
+          key={ tag }
+          className="tag" >
+          { tag }
+        </li>
+      )}
     </ul>
   )
 }

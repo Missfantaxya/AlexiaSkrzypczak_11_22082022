@@ -1,61 +1,94 @@
 .dropdown{
   position: relative;
-  margin: 1.25rem 0;
+  margin: max(min(5.33333vw, 31px), 20px) auto;
+}
+
+.dropdown__about:last-child{
+  margin-bottom: min(44.8vw, 201px);
+}
+
+/* ne fonctionne pas avec firefox */
+.dropdown__about:has(.dropdown__arrow--open) ~ .dropdown__about:last-child,
+.dropdown__about:last-child:has(.dropdown__arrow--open) {
+  margin-bottom: min(5.33333vw, 30px);
 }
 
 .dropdown__button{
   background-color: #FF6060;
   color:#FFFFFF;
   width:100%;
-  height: 1.870625rem;
+  height: max(min(8vw, 47px), 25px);
   border-radius: 5px;
-  padding: 0 0.64rem;
+  padding: 0 max(min(2.66666vw, 20px), 10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.dropdown__arrow{
+  width: 4.05333vw;
+  height: 4.05333vw;
+}
+
 .dropdown__arrow--close{
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
 
 .dropdown__arrow--open{
-  transform: rotate(0deg);
+  transform: rotate(-90deg);
 }
 
 .dropdownn__content--close{
   display: none;
-  
 }
 
 .dropdownn__content--open{
   display: block;
   position: relative;
   border-radius: 5px;
-  top:-5px;
+  top:-5.75px;
   z-index: -1;
   background-color: #F7F7F7;
-  padding: 1.43875rem 0.431875rem 0.8125rem 0.719375rem;
-  font-size: 0.75rem;
+  padding: calc(1.43875rem + 5.75px) 0.431875rem 0.08125rem 0.719375rem;
+  font-size: max(min(3.2vw, 24px), 12px);
   line-height: 142.6%;
   width: 100%;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 700px) {
+  .dropdown__arrow{
+    width: min(2.85714vw,26px);
+    height: min(2.85714vw,26px);
+  }
+  .dropdown__about {
+    width: 90%;
+  }
   .dropdown__lodging {
-    --button-height :3.25rem;
-    width: 36.375rem;
+    --button-height : min(3.61112vw,70px);
+    width: 40.41667vw;
     margin: 0;
   }
-
+}
+@media screen and (min-width: 1440px) { 
+  .dropdown__arrow{
+    width: min(1.83333vw, 67px);
+    height: min(1.83333vw, 67px);
+  }
+  .dropdown__lodging {
+    --button-height : min(3.61112vw,70px);
+    width: 40.41667vw;
+    margin: 0;
+  }
   .dropdown__about{
     --button-height :2.9375rem;
-    width: 63.9375rem;
-    margin: 1.9375rem auto;
-  }
-
+    width: min(71.04166vw, 1500px); 
+    margin: max(min(2.15277vw, 40px), 20px) auto;
+  } 
   .dropdown__button {
-    padding: 0 1.25rem;
     height: var(--button-height);
+  }
+  .dropdownn__content--open{
+    top:-10px;
+    padding: 2.5rem 0.75rem 1.6875rem 1.25rem;
   }
 }

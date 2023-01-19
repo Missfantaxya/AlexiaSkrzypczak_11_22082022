@@ -1,26 +1,22 @@
 .host{
-display : flex;
-justify-content: space-between;
-align-items: center;
-width: 40.6%;
-height: 2.0625rem;
-
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .host__identity{
   display :flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-end;
-  height: 2rem;
-  width: 5.813rem;
-  font-size: 0.75rem;
+  font-size: max(min(3.2vw, 26px),12px);
+  margin-right: 2.8vw;
 }
 
 .host__picture{
-width: 2rem;
-height: 2rem;
-border-radius: 50%;
-background-color: #C4C4C4;
+  width: 8.53vw;
+  height: 8.53vw;
+  border-radius: 50%;
+  background-color: #C4C4C4;
 }
 
 .host__img{
@@ -28,20 +24,17 @@ background-color: #C4C4C4;
 }
 
 @media screen and (min-width: 1440px) {
-  .host{
-    /* width: 13.468%; */
-    width: 167px;
-    height: 4rem;
+  .host {
+    width: 11.6vw;
+  } 
+  .host__identity {
+    height: 3.61111vw; 
+    line-height: 1.78vw;
+    font-size: 1.25vw;
+    margin-right: 0.69444vw;
   }
-  .host__identity{
-    height: 3.25rem;
-    width: 5.8125rem;
-    font-size: 1.125rem;
-    margin-right: 0.625rem;
-  }
-
-  .host__picture{
-  width: 4rem;
-  height: 4rem;
+  .host__picture {
+    width: 4.445vw;
+    height: 4.445vw;
   }
 }

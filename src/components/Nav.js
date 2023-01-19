@@ -9,7 +9,7 @@ function Nav ()
   return (
     <nav className="header__nav">
       <ul className="nav__list">
-        <li>
+        <li className="nav__item--home">
           <NavLink
             to="/"
             style={({ isActive }) =>
@@ -19,7 +19,7 @@ function Nav ()
             Accueil
           </NavLink>
         </li>
-        <li>
+        <li className="nav__item--about">
           <NavLink
             to="about"
             style={({ isActive }) =>
