@@ -1,5 +1,6 @@
 import './Tag.css'
 
+//TODO coment in english and use JSDoc
 function Tag ( { currentTags } )
 {
   return (

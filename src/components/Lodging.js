@@ -9,6 +9,7 @@ import Carrousel from "./Carrousel"
 import LodgingTitle from "./LodgingTitle"
 import HostDetails from "./HostDetails"
 
+//TODO coment in english and use JSDoc
 function Lodging ()
 {
   const lodgingTitleMenus = [

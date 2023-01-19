@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 
 import './NotFound.css'
 
+//TODO coment in english and use JSDoc
 function NotFound() {
     return(
         <div className='notFound'>

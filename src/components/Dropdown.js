@@ -2,8 +2,7 @@ import { useState } from 'react'
 
 import './Dropdown.css'
 
-
-
+//TODO coment in english and use JSDoc
 function Dropdown ({classStyle, menu, children})
 {
   const [ open, setOpen ] = useState( false )

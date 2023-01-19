@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import './Carrousel.css'
-
+//TODO coment in english and use JSDoc
 function Carrousel ({pictures})
 { 
   const [ pictureIndex, setPictureIndex ] = useState( 0 )

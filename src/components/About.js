@@ -2,6 +2,7 @@ import './About.css'
 
 import Dropdown from './Dropdown'
 
+//TODO coment in english and use JSDoc
 function About ()
 {
   const aboutMenus = [

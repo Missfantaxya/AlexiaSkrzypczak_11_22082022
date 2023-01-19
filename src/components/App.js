@@ -10,9 +10,8 @@ import NotFound from './NotFound'
 import Footer from './Footer'
 
 // FIXME renvoyer sur la 404 quand route dynamique inexistante
+//TODO coment in english and use JSDoc
 
-//FIXME n'ouvre pas la page lodging en haut 
-// voir avec une action scrollToTop
 function App ()
 {
   let {id} = useParams()

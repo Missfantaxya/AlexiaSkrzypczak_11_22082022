@@ -3,6 +3,7 @@ import "./HostDetails.css"
 import Host from "./Host"
 import Rate from "./Rate"
 
+//TODO coment in english and use JSDoc
 function HostDetails ( {currentHost, currentRate} )
 {
   // console.log("currentRate : ",currentRate) //*

@@ -1,5 +1,5 @@
 import "./Banner.css"
-
+//TODO coment in english and use JSDoc
 function Banner ()
 {
   
