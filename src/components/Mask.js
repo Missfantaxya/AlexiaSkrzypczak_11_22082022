@@ -1,5 +1,6 @@
 import "./Mask.css"
 
+//TODO coment in english and use JSDoc
 function Mask ()
 {
   return (

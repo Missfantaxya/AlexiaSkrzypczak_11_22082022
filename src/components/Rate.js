@@ -1,5 +1,6 @@
 import './Rate.css'
 
+//TODO coment in english and use JSDoc
 function Rate (currentRate)
 {
   const Star = (color) => (

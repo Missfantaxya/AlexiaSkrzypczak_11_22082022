@@ -5,8 +5,7 @@ import advertisements from "../data/advertisements"
 import Mask from "./Mask.js"
 import Thumb from "./Thumb"
 
-//FIXME n'ouvre pas la page lodging en haut 
-
+//TODO coment in english and use JSDoc
 function Home ()
 {
   return (

@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 
 import "./Nav.css"
 
+//TODO coment in english and use JSDoc
 function Nav ()
 {
   let activeStyle = { textDecoration: "underline" };

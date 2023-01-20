@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 
 import "./Thumb.css"
 
+//TODO coment in english and use JSDoc
 function Thumb ( {
   id,
   title,

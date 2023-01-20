@@ -1,4 +1,4 @@
-import { Routes, Route, useParams } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import './App.css'
 
@@ -9,17 +9,18 @@ import About from './About'
 import NotFound from './NotFound'
 import Footer from './Footer'
 
+//TODO coment in english and use JSDoc
 
 function App ()
 {
-  let {id} = useParams()
+
   return (
     <div className="app">
       <Header />
         <main className='main'>
           <Routes>
             <Route path="/" element={ <Home /> } />
-          <Route path={`lodging/:${id}`} element={ <Lodging /> } />
+          <Route path="lodging/:id" element={ <Lodging /> } />
           <Route path="about" element={ <About /> } />
           <Route path="*" element={ <NotFound />} />
           </Routes>

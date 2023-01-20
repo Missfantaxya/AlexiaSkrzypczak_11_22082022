@@ -4,6 +4,7 @@ import './LodgingTitle.css'
 
 import Tag from './Tag'
 
+//TODO coment in english and use JSDoc
 function LodgingDetails ( {currentLodging} ) {
     return(
       <div className="lodging__title">

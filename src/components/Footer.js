@@ -1,5 +1,5 @@
 import "./Footer.css"
-
+//TODO coment in english and use JSDoc
 function Footer ()
 {
   return (
