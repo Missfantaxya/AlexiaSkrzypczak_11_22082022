@@ -1,5 +1,4 @@
-import { useEffect } from "react"
-import { useParams, useNavigate } from "react-router-dom"
+import { useParams } from "react-router-dom"
 
 import "./Lodging.css"
 
@@ -78,7 +77,6 @@ function Lodging ()
         </>
         : <NotFound />
       } 
-      
     </>
     )
 }
