@@ -1,7 +1,8 @@
 
-
+// imports : styles
 import './LodgingTitle.css'
 
+//imports : components
 import Tag from './Tag'
 
 //TODO coment in english and use JSDoc
