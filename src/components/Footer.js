@@ -1,5 +1,11 @@
+// imports : components
 import "./Footer.css"
-//TODO coment in english and use JSDoc
+
+/**
+ * A functional component that represents the footer of the website
+ * @function
+ * @returns {JSX.Element}
+ */
 function Footer ()
 {
   return (

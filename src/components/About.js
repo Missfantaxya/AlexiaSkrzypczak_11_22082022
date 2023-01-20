@@ -1,12 +1,22 @@
+// imports : style
 import './About.css'
 
+// imports : components
 import Dropdown from './Dropdown'
 
-//TODO coment in english and use JSDoc
+/**
+ * Function that returns the About page.
+ * @function
+ * @returns {JSX.Element} - The JSX element for the About page.
+ */
 function About ()
 {
+  /**
+   * Tables of page dropdown content
+   * @constant
+   * @type {Array.<{title:string, description:string}>}
+   */
   const aboutMenus = [
-    
     {
       'title': 'Fiabilité',
       'description': 'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.'

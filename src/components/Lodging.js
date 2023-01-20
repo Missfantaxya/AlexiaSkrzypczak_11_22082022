@@ -1,15 +1,25 @@
+// imports : npm
 import { useParams } from "react-router-dom"
 
+// imports : styles
 import "./Lodging.css"
 
+// imports : data
 import advertisements from "../data/advertisements"
+
+// imports : pages
 import NotFound from "./NotFound"
+
+// imports : component
 import Dropdown from "./Dropdown"
 import Carrousel from "./Carrousel"
 import LodgingTitle from "./LodgingTitle"
 import HostDetails from "./HostDetails"
 
-//TODO coment in english and use JSDoc
+/**
+ * Renders a hosting component that displays details and information about a specific hosting based on the id passed in the URL.
+ * @returns {JSX.Element} A JSX element that represents the hosting component, or the NotFound page if the identifier passed in the URL is invalid.
+ */
 function Lodging ()
 {
   const lodgingTitleMenus = [
@@ -17,30 +27,45 @@ function Lodging ()
     'Equipements'
   ]
 
-  // valeur dynamique de l'url dans un objet
+  /**
+   * @constant {object} objUrlId - Object that contains the parameters passed in the URL.
+   */
   const objUrlId  = useParams()
   
-  // valeur dynamique de l'url dans un tableau
+ /**
+   * @constant {string[]} arrHousingId - Array of values of parameters passed in URL.
+   */
   const arrHousingId = Object.values( objUrlId )
 
-  // purification de l'id 
+  /**
+ * @constant {string} houseId - The id of the lodging passed in the URL, cleaned up.
+ */
   const houseId = arrHousingId[0].replace(":", '')
 
-  // fonction de callback pour appliquer la fonction filter
-  // retourne les élément dont l'id (house.id) est === à houseId 
+  /**
+   * Filters a housing data collection to return the one with a matching id
+   * @function
+   * @param {object} housing - the housing object to verify the id
+   * @returns {boolean} true if house id is equal to houseId
+   */
   function findById ( housing )
   {
     return housing.id === houseId
   }
 
-  //récupération des données avec l'id correspondant
+  /**
+   * @constant {array} HousingById - Array of the housing object which has the same id as houseId.
+   */
   const HousingById = advertisements.filter( findById )
-  // const HousingById = advertisements.filter( houseId )
 
-  //récupération de toutes les données de l'élément 
+  /**
+   * @constant {object} currentLodging - The lodging object that has the same id as the houseId.
+   */
   const currentLodging = HousingById[ 0 ]
   
-  //vérifie que l'id existe dans le tableau des données
+  /**
+   * @constant {boolean} isValidId - Boolean which is true if the id passed in the URL exists, false otherwise.
+   */
   const isValidId = HousingById.length !== 0
   
 
