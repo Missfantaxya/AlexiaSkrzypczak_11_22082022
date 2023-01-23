@@ -2,8 +2,8 @@
 import "./Header.css"
 
 // imports : components
-import Banner from "./Banner"
-import Nav from "./Nav"
+import Banner from "../Banner/Banner"
+import Nav from "../Nav/Nav"
 
 /**
  * A functional component that represents the header of the website

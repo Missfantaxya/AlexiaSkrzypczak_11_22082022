@@ -5,14 +5,14 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css'
 
 //imports : component
-import Header from './Header'
-import Footer from './Footer'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 
 // imports : pages
-import Home from './Home'
-import Lodging from './Lodging'
-import About from './About'
-import NotFound from './NotFound'
+import Home from '../../pages/Home/Home'
+import Lodging from '../../pages/Lodging/Lodging'
+import About from '../../pages/About/About'
+import NotFound from '../../pages/NotFound/NotFound'
 
 
 /**

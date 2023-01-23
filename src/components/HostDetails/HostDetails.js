@@ -2,8 +2,8 @@
 import "./HostDetails.css"
 
 //imports : components
-import Host from "./Host"
-import Rate from "./Rate"
+import Host from "../Host/Host"
+import Rate from "../Rate/Rate"
 
 /** 
  * Renders a host details component

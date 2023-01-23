@@ -4,7 +4,7 @@
   height: min(59.46666vw, 223px);
   border-radius: 10px;
   background-color: #F7F7F7;
-  background-image: url(../assets/about-mask-mobile.png);
+  background-image: url(../../assets/about-mask-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -31,7 +31,7 @@
     margin-top: 2.75rem;
     border-radius: 25px;
     background-color: #F7F7F7;
-    background-image: url(../assets/about-mask-desktop.png);
+    background-image: url(../../assets/about-mask-desktop.png);
   }
 
   .dropdown__about .dropdownn__content--open {

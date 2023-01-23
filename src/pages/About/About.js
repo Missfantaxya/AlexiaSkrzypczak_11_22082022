@@ -2,7 +2,7 @@
 import './About.css'
 
 // imports : components
-import Dropdown from './Dropdown'
+import Dropdown from '../../components/Dropdown/Dropdown'
 
 /**
  * Function that returns the About page.
