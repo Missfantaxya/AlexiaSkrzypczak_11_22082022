@@ -9,7 +9,7 @@ import Tag from '../Tag/Tag'
  * @param {Object} currentLodging - Lodging object that contains the title, location and tags of the lodging.
  * @returns {JSX.Element} JSX element that represents slot title, location and tags.
  */
-function LodgingDetails ( {currentLodging} ) {
+function LodgingTitle ( {currentLodging} ) {
     return(
       <div className="lodging__title">
         <h2 className="lodging__content">
@@ -23,4 +23,4 @@ function LodgingDetails ( {currentLodging} ) {
     )
 }
 
-export default LodgingDetails
+export default LodgingTitle
