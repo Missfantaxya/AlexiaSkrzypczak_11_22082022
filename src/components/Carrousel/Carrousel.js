@@ -74,10 +74,10 @@ function Carrousel ({pictures})
         className="carrousel__picture"
         />
         { multipesPictures &&
-        <p className='carrousel__counter'>
-          { pictureIndex + 1 } / { pictures.length }
-        </p>
-      }      
+          <p className='carrousel__counter'>
+            { pictureIndex + 1 } / { pictures.length }
+          </p>
+        }      
       { multipesPictures &&
         <button
           className='carrousel__button carrousel__next'
