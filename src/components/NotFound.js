@@ -1,8 +1,12 @@
+// imports : npm
 import { Link } from 'react-router-dom'
 
+// imports : styles
 import './NotFound.css'
-
-//TODO coment in english and use JSDoc
+/**
+ * NotFound displays a 404 error message when the user tries to access a non-existent page.
+ * @returns {JSX.Element} - Element representing the layout of the NotFound component.
+ */
 function NotFound() {
     return(
         <div className='notFound'>

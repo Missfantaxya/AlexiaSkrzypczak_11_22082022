@@ -1,6 +1,11 @@
+// imports : styles
 import './Tag.css'
 
-//TODO coment in english and use JSDoc
+/**
+ * This component restores the list of tags of an accommodation.
+ * @param {Object} currentTags - Object containing current tags for a slot
+ * @returns {JSX} - Element of the list of tags in JSX format
+ */
 function Tag ( { currentTags } )
 {
   return (

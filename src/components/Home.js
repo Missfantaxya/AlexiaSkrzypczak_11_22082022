@@ -1,11 +1,17 @@
+// imports : styles
 import "./Home.css"
 
+// imports : data
 import advertisements from "../data/advertisements"
 
+// imports : components
 import Mask from "./Mask.js"
 import Thumb from "./Thumb"
 
-//TODO coment in english and use JSDoc
+/**
+ * Renders a home page component
+ * @returns {JSX.Element} A JSX element that represents the home page.
+ */
 function Home ()
 {
   return (
@@ -20,7 +26,7 @@ function Home ()
         ))}
       </section>
     </>
- )
+  )
 }
 
 export default Home

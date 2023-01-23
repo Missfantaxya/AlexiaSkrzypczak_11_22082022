@@ -1,16 +1,25 @@
-import { useEffect } from 'react';
+// imports : npm
+import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
 
 /**
- * Custom hook to scroll to the top of the page on change.
- * @returns {null} - It only triggers an effect.
+ * Un composant fonctionnel qui utilise le crochet useEffect pour faire défiler vers le haut de la page lorsque l'emplacement change.
+ * @returns {null} Le composant ne renvoie rien.
  */
 export default function ScrollToTop() {
-    // Get the current location from the hook
+    /**
+     * @constant {Object} pathname - Current pathname of the location, obtained from the useLocation hook.
+     */
     const { pathname } = useLocation();
 
+    /**
+     * @constant {HTMLElement} body - Document root element, selected using document.querySelector('#root').
+     */
     useEffect(() => {
-        // Select the root element and scroll to it smoothly
+        /**
+         * The constant 'body' is a reference to the root element of the DOM, selected using the querySelector method with the selector "#root".
+         * @constant
+         */
         const body = document.querySelector('#root');
         body.scrollIntoView(
             {

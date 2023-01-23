@@ -1,11 +1,25 @@
+// imports : npm
 import { useState } from 'react'
 
+// imports : components
 import './Carrousel.css'
-//TODO coment in english and use JSDoc
+
+/**
+ * Functional component returns a carousel element.
+ * @function Carrousel
+ * @param {Array.<string>} pictures - Array of image URLs to display in the carousel.
+ * @returns {JSX.Element} - The JSX element for the carousel.
+ */
 function Carrousel ({pictures})
 { 
   const [ pictureIndex, setPictureIndex ] = useState( 0 )
   
+    /**
+     * Handles the event of clicking the "previous" button.
+     * Changes the displayed image to the previous image in the pictures array.
+     * If the current image is the first image, it will display the last image.
+     * @function
+     */
   function HandlePreviousClick ()
   {
     if ( pictureIndex === 0 )
@@ -19,6 +33,12 @@ function Carrousel ({pictures})
     }
   }
   
+    /** 
+     * Handles the event of clicking the "next" button.
+     * Changes the displayed image to the next image in the pictures array.
+     * If the current image is the last image, it will display the first image.
+     * @function
+     */
   function HandleNextClick ()
   {
     if ( pictureIndex === pictures.length-1 )
@@ -32,7 +52,12 @@ function Carrousel ({pictures})
     }
   }
   
+  /**
+   * A boolean indicating if there are multiple pictures in the pictures array.
+   * @constant {boolean}
+   */
   const multipesPictures = pictures.length > 1
+
   return ( 
     <div className="carrousel">
       { multipesPictures &&

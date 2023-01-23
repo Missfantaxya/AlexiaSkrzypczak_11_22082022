@@ -1,5 +1,11 @@
+// imports : components
 import "./Banner.css"
-//TODO coment in english and use JSDoc
+
+/**
+ * Functional component returns the banner element.
+ * @function
+ * @returns {JSX.Element} - The JSX element for the banner.
+ */
 function Banner ()
 {
   
