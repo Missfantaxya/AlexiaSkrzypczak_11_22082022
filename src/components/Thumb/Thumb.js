@@ -30,7 +30,7 @@ function Thumb ( {
    * @constant
    * @type {boolean} - Boolean that checks if the slot has a cover image
    */
-  const hasCover =  cover  !== undefined
+  const hasCover = cover !== undefined
   
   /**
    * @constant
