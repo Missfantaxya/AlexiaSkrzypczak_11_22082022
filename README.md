@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# KASA project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here is the development repository for project 11 of the Application Developer - JavaScript React training from Openclassrooms.
 
-## Available Scripts
+## Installation and startup
 
-In the project directory, you can run:
+1. Clone repository: `https://github.com/Missfantaxya/alexiaskrzypczak_11_22082022`
+2. install modules: `$ npm install`
+3. Starting the local server: `npm start`
+4. access the project page: [http://localhost:3000](http://localhost:3000)
 
-### `npm start`
+## Technical constraints
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Tools
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project uses the React library, it is made with [Create React App](https://create-react-app.dev/) and [React Router](https://reactrouter.com/en/main).
+No external libraries have been installed
+The option to use Sass for styling was not retained. The styling was done by default with CSS.
 
-### `npm test`
+### React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Cutting into modular and reusable components;  
+- One component per file;  
+- Logical structure of the different files;  
+- Using props between components;  
+- Use of state in components when necessary;  
+- Event management;  
+- Iteration of lists with map;  
+- Use of prioritized functional component;  
+- The 404 page is returned for each route that does not exist, or if a value present in the URL is not part of the data informed;  
+- Router logic is combined in a single file.  
 
-### `npm run build`
+### React Router
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Route parameters are managed by React Router in the URL to retrieve information for each accommodation.  
+- There is one page per route.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### General
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- The code must not produce any error or warning in the console.  
 
-### `npm run eject`
+### features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- For scrolling photos in the gallery (Gallery component):
+  - If the user is at the first image and clicks on "previous image", the gallery displays the last image.
+  - Conversely, when the image displayed is the last in the gallery, if the user clicks on "next image", the gallery displays the first image.
+  - If there is only one image, the "next" and "previous" buttons do not appear.
+  - The gallery must always remain the same height, that indicated on the Figma model. The images will therefore be cropped and centered within the image frame.
+- Collapse: By default, Collapses are closed on page initialization.
+- If the Collapse is open, the user's click closes it.
+  - Conversely, if the Collapse is closed, a click opens it.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
