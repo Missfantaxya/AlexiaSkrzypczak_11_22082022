@@ -9,7 +9,7 @@ import './Rate.css'
 function Rate (currentRate)
 {
   /**
-   * @function Star
+   * @constant Star
    * @param {string} color - The fill color of the star
    * @returns {JSX.Element} Element representing the star in SVG format
    */
@@ -28,11 +28,11 @@ function Rate (currentRate)
   /**
    *@constant {JSX.Element} fullStar - Element representing the full star in red
    */
-  let fullStar = Star( "#FF6060" )
+  const fullStar = Star( "#FF6060" )
   /**
    *@constant {JSX.Element} emptyStar - Element representing the empty star in gray
    */
-  let emptyStar = Star( "#E3E3E3" )
+  const emptyStar = Star( "#E3E3E3" )
 
   /**
    *@constant {number} currentHostRate - Number of stars to display in full
@@ -40,12 +40,11 @@ function Rate (currentRate)
   const currentHostRate = parseInt( currentRate.currentRate , 10 ) 
 
   /**
-   *@let {JSX.Element[]} stars - List of stars to display
+   *@member {JSX.Element[]} stars - List of stars to display
    */
   let stars = []
 
   /**
-    *@function
     *@description - Loop that walks the range of currentHostRate and pushes the fullStar component to the star array.
     *@param {int} i - Iterator variable for loop
     *@param {int} currentHostRate - Current host rate, used to determine how many full stars to display
@@ -54,8 +53,8 @@ function Rate (currentRate)
   for (let i = 0; i < currentHostRate; i++) {
     stars.push( fullStar )
   }
+
   /**
-   *@function
    *@description - Conditional statement that checks if the currentHostRate is less than 5. If true, a second loop is executed that loops through the range of remaining empty stars and pushes the emptyStar component to the star array.
    *@param {int} i - Iterator variable for loop
    *@param {int} currentHostRate - Current host rate, used to determine how many empty stars to display
