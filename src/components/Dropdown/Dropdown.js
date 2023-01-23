@@ -18,7 +18,7 @@ function Dropdown ({classStyle, menu, children})
 
   /**
    * A hook that allows updating the state of the dropdown to open or closed
-   * @function
+   * @constant
    * @param {boolean} state - The new state of the dropdown, whether it is open or closed
    */
   const [ open, setOpen ] = useState( false )

@@ -14,12 +14,12 @@ function Carrousel ({pictures})
 { 
   const [ pictureIndex, setPictureIndex ] = useState( 0 )
   
-    /**
-     * Handles the event of clicking the "previous" button.
-     * Changes the displayed image to the previous image in the pictures array.
-     * If the current image is the first image, it will display the last image.
-     * @function
-     */
+  /**
+   * Handles the event of clicking the "previous" button.
+   * Changes the displayed image to the previous image in the pictures array.
+   * If the current image is the first image, it will display the last image.
+   * @function
+   */
   function HandlePreviousClick ()
   {
     if ( pictureIndex === 0 )
@@ -33,12 +33,12 @@ function Carrousel ({pictures})
     }
   }
   
-    /** 
-     * Handles the event of clicking the "next" button.
-     * Changes the displayed image to the next image in the pictures array.
-     * If the current image is the last image, it will display the first image.
-     * @function
-     */
+  /** 
+   * Handles the event of clicking the "next" button.
+   * Changes the displayed image to the next image in the pictures array.
+   * If the current image is the last image, it will display the first image.
+   * @function
+   */
   function HandleNextClick ()
   {
     if ( pictureIndex === pictures.length-1 )
