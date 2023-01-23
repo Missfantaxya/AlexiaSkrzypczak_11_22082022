@@ -1,7 +1,7 @@
 // imports : npm
 import { useState } from 'react'
 
-// imports : components
+// imports : styles
 import './Dropdown.css'
 
 
