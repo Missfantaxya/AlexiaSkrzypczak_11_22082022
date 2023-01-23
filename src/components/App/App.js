@@ -27,9 +27,9 @@ function App ()
         <main className='main'>
           <Routes>
             <Route exact path="/" element={ <Home /> } />
-          <Route path="lodging/:id" element={ <Lodging /> } />
-          <Route path="about" element={ <About /> } />
-          <Route path="*" element={ <NotFound />} />
+            <Route path="lodging/:id" element={ <Lodging /> } />
+            <Route path="about" element={ <About /> } />
+            <Route path="*" element={ <NotFound />} />
           </Routes>
         </main>
       <Footer />
