@@ -67,7 +67,6 @@ function Lodging ()
    * @constant {boolean} isValidId - Boolean which is true if the id passed in the URL exists, false otherwise.
    */
   const isValidId = HousingById.length !== 0
-  
 
   return (
     <>
