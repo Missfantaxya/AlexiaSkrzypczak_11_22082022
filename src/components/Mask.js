@@ -1,6 +1,10 @@
+// imports : styles
 import "./Mask.css"
 
-//TODO coment in english and use JSDoc
+/**
+ * Renders a Mask component that displays a background and a message
+ * @returns {JSX.Element} A JSX element that represents the Mask component
+ */
 function Mask ()
 {
   return (

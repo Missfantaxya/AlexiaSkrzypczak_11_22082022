@@ -1,8 +1,18 @@
+// imports : styles
 import './Rate.css'
 
-//TODO coment in english and use JSDoc
+/**
+   * The rating component displays the satisfaction rate for the current host
+   * @param {object} currentRate - Object containing host rate
+   * @returns {JSX.Element} - Element representing host rate
+   */
 function Rate (currentRate)
 {
+  /**
+   * @function Star
+   * @param {string} color - The fill color of the star
+   * @returns {JSX.Element} Element representing the star in SVG format
+   */
   const Star = (color) => (
     <svg
       viewBox="0 0 16 16"
@@ -15,18 +25,43 @@ function Rate (currentRate)
     </svg>
   )
 
-  
+  /**
+   *@constant {JSX.Element} fullStar - Element representing the full star in red
+   */
   let fullStar = Star( "#FF6060" )
+  /**
+   *@constant {JSX.Element} emptyStar - Element representing the empty star in gray
+   */
   let emptyStar = Star( "#E3E3E3" )
 
-  
+  /**
+   *@constant {number} currentHostRate - Number of stars to display in full
+   */
   const currentHostRate = parseInt( currentRate.currentRate , 10 ) 
 
+  /**
+   *@let {JSX.Element[]} stars - List of stars to display
+   */
   let stars = []
 
+  /**
+    *@function
+    *@description - Loop that walks the range of currentHostRate and pushes the fullStar component to the star array.
+    *@param {int} i - Iterator variable for loop
+    *@param {int} currentHostRate - Current host rate, used to determine how many full stars to display
+    *@param {component} fullStar - Full star component that is pushed to the star array
+    */
   for (let i = 0; i < currentHostRate; i++) {
     stars.push( fullStar )
   }
+  /**
+   *@function
+   *@description - Conditional statement that checks if the currentHostRate is less than 5. If true, a second loop is executed that loops through the range of remaining empty stars and pushes the emptyStar component to the star array.
+   *@param {int} i - Iterator variable for loop
+   *@param {int} currentHostRate - Current host rate, used to determine how many empty stars to display
+   *@param {int} 5 - Maximum number of stars that can be displayed
+   *@param {component} emptyStar - Empty star component that is pushed to the stars array
+   */
   if ( currentHostRate < 5 )
   {
     for (let i = currentHostRate+1; i < 6; i++) {
