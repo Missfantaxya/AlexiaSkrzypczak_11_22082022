@@ -4,7 +4,7 @@
   border-radius: 10px;
   height: min(29.6vw, 120px);
   background-color: #F6F6F6;
-  background: url(../assets/mask-mobile.png);
+  background: url(../../assets/mask-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -36,7 +36,7 @@
     margin-bottom: 2.98611vw;
     height: min(15.48612vw, 225px);
     background-color: #F6F6F6;
-    background: url(../assets/mask-desktop.png);
+    background: url(../../assets/mask-desktop.png);
     background-size: cover;
   }
 

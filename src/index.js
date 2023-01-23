@@ -10,7 +10,7 @@ import ScrollToTop from './utils/ScrollToTop';
 import './index.css';
 
 // imports : components
-import App from './components/App';
+import App from './components/App/App';
 /**
  * @const
  * @description Create the root element and render the application with the React DOM library.

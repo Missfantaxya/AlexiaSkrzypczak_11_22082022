@@ -5,16 +5,16 @@ import { useParams } from "react-router-dom"
 import "./Lodging.css"
 
 // imports : data
-import advertisements from "../data/advertisements"
+import advertisements from "../../data/advertisements"
 
 // imports : pages
-import NotFound from "./NotFound"
+import NotFound from "../NotFound/NotFound"
 
 // imports : component
-import Dropdown from "./Dropdown"
-import Carrousel from "./Carrousel"
-import LodgingTitle from "./LodgingTitle"
-import HostDetails from "./HostDetails"
+import Dropdown from "../../components/Dropdown/Dropdown"
+import Carrousel from "../../components/Carrousel/Carrousel"
+import LodgingTitle from "../../components/LodgingTitle/LodgingTitle"
+import HostDetails from "../../components/HostDetails/HostDetails"
 
 /**
  * Renders a hosting component that displays details and information about a specific hosting based on the id passed in the URL.

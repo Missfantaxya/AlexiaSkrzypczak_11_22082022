@@ -2,7 +2,7 @@
 import './LodgingTitle.css'
 
 //imports : components
-import Tag from './Tag'
+import Tag from '../Tag/Tag'
 
 /**
  * Renders the title and location of a slot, and its tags.

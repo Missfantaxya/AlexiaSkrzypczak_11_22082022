@@ -2,11 +2,11 @@
 import "./Home.css"
 
 // imports : data
-import advertisements from "../data/advertisements"
+import advertisements from "../../data/advertisements"
 
 // imports : components
-import Mask from "./Mask.js"
-import Thumb from "./Thumb"
+import Mask from "../../components/Mask/Mask"
+import Thumb from "../../components/Thumb/Thumb"
 
 /**
  * Renders a home page component
