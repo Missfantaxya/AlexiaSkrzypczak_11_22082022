@@ -20,6 +20,10 @@
   width:max(min(18.919vw,116px), 65px);
 }
 
+.activeStyle {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 374px) {
   .header__nav{
     width: 90%;
