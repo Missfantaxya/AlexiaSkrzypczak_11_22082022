@@ -12,6 +12,12 @@ import './Carrousel.css'
  */
 function Carrousel ({pictures})
 { 
+  /**
+   * A boolean indicating if there are multiple pictures in the pictures array.
+   * @constant {boolean}
+   */
+  const multipesPictures = pictures.length > 1
+  
   const [ pictureIndex, setPictureIndex ] = useState( 0 )
   
   /**
@@ -52,11 +58,6 @@ function Carrousel ({pictures})
     }
   }
   
-  /**
-   * A boolean indicating if there are multiple pictures in the pictures array.
-   * @constant {boolean}
-   */
-  const multipesPictures = pictures.length > 1
 
   return ( 
     <div className="carrousel">
