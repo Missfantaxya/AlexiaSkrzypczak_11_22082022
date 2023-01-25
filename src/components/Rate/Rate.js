@@ -9,6 +9,11 @@ import './Rate.css'
 function Rate (currentRate)
 {
   /**
+   *@constant {number} currentHostRate - Number of stars to display in full
+   */
+  const currentHostRate = parseInt( currentRate.currentRate, 10 ) 
+  
+  /**
    * @constant Star
    * @param {string} color - The fill color of the star
    * @returns {JSX.Element} Element representing the star in SVG format
@@ -33,11 +38,6 @@ function Rate (currentRate)
    *@constant {JSX.Element} emptyStar - Element representing the empty star in gray
    */
   const emptyStar = Star( "#E3E3E3" )
-
-  /**
-   *@constant {number} currentHostRate - Number of stars to display in full
-   */
-  const currentHostRate = parseInt( currentRate.currentRate , 10 ) 
 
   /**
    *@member {JSX.Element[]} stars - List of stars to display
@@ -70,12 +70,11 @@ function Rate (currentRate)
   
   return (
       <div className='host__rate'>
-      {
-        stars.map( ( star,index ) =>
-          <div key={index} className='host__star' >
-            { star }
-          </div> )
-      }
+      { stars.map( ( star,index ) =>
+        <div key={index} className='host__star' >
+          { star }
+        </div>
+      ) }
     </div>
     )
 }
