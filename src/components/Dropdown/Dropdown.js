@@ -57,10 +57,9 @@ function Dropdown ({classStyle, menu, children})
           </svg>
         </span>
       </button>
-      <div
-        className={ dropdownnContentClassName }>
-          {children}
-        </div>
+      <div className={ dropdownnContentClassName }>
+        {children}
+      </div>
     </div>
   )
 }
