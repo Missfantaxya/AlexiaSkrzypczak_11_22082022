@@ -16,7 +16,7 @@ function Nav ()
       <ul className="nav__list">
         <li className="nav__item--home">
           <NavLink
-            className={({ isActive }) => isActive && "activeStyle" }
+            className={({ isActive }) => isActive ? "activeStyle" : undefined }
             to="/"
           >
             Accueil
@@ -24,7 +24,7 @@ function Nav ()
         </li>
         <li className="nav__item--about">
           <NavLink
-            className={({ isActive }) => isActive & "activeStyle" }
+            className={({ isActive }) => isActive ? "activeStyle" : undefined }
             to="about"
           >
             A propos
